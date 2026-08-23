@@ -164,3 +164,20 @@ const called = makeDeepCopy(newObj);
 console.log(called);
 const calledArray = makeDeepCopy(arr);
 console.log(calledArray);
+
+/*
+@ Deep copy
+    - // # explanation about above code
+ make sure does not used the inbuilt method or function to make deep copy
+
+1 so above function create deep copy of the object or array
+    - i.e recursively coped all nested object and array ensuring that no reference to the original object or array.
+2 base case:
+    - the function first check if the input (obj as parameter ) is not object or null if true it simply return input since primitive type like num, string, boolean , null, undefined  so do not need to deep cloning
+3 recursive code :
+    - if objet is an object or array  so it initialize with empty object or array.
+    retrieve all key from the object
+- It iterates through each key, recursively calling makeDeepCopy on each property of obj, and assigns the result to the corresponding key in copiedValue.
+- Return: Finally, it returns the deeply copied object or array.
+
+*/
