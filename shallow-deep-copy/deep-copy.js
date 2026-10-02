@@ -20,31 +20,27 @@ defincation :
         - _.cloneDeep(boj) from Lodash -  Handle more complex objects (with non - JSON - safe data )
 
     3. used structuredClone(obj)  : Method in js used to make Deep copy of objects & array.
-
-
 */
 
-// ********************************************************************************************************
-
 const person = {
-  name: "vishal",
+  name: 'vishal',
   age: 29,
   address: {
-    city: "pune",
-    locality: "junnar",
-    village: "wadgaon sahani",
+    city: 'pune',
+    locality: 'junnar',
+    village: 'wadgaon sahani',
     zip: 412401,
   },
 };
 // * Make deep copy using Seralization & Deseralization (only work with JSON - safe Value (Not allowed function, undefined, ))
 let deepCopy = JSON.parse(JSON.stringify(person));
 console.log(deepCopy);
-person.name = "akshu";
+person.name = 'akshu';
 console.log(person);
 console.log(deepCopy);
 
 // * modified nested array
-deepCopy.address.village = "sawargaion";
+deepCopy.address.village = 'sawargaion';
 // does not affect to the origional array
 console.log(deepCopy);
 console.log(person);
@@ -60,19 +56,19 @@ let arr = [
   {
     a: 10,
   },
-  ["b", "c"],
+  ['b', 'c'],
 ];
 
 // * Deep copy using JSON method (using seralization & Deseralization)
 const arrDeepCopy = JSON.parse(JSON.stringify(arr));
 console.log(arrDeepCopy);
-arr[3].a = "vishal";
+arr[3].a = 'vishal';
 // Here does affect to the copied object becase copied object are independent
 console.log(arr);
 console.log(arrDeepCopy);
 
 // * Modified copied object also does not affect to the origional array
-console.log(arrDeepCopy[4].push("vishal"));
+console.log(arrDeepCopy[4].push('vishal'));
 console.log(arrDeepCopy);
 
 // ********************************************************************************************************
@@ -86,9 +82,9 @@ let arrg = [
   10,
   20,
   30,
-  { name: "vishal" },
+  { name: 'vishal' },
   function () {
-    console.log("Hello");
+    console.log('Hello');
   },
 ];
 console.log(arrg);
@@ -96,7 +92,7 @@ console.log(arrg);
 // * In arrg array having function so "structuredClone" function does not support the function and symbol in array or object we need to filter it array & then copy
 // so to copy the array we need to exclude thos function & symbl from the array then and only then it allow to make deep copy
 const filterArr = arrg.filter((ele, index) => {
-  return typeof ele !== "function" && typeof ele !== "symbol";
+  return typeof ele !== 'function' && typeof ele !== 'symbol';
 });
 console.log(filterArr);
 console.log(structuredClone(filterArr));
@@ -106,15 +102,15 @@ console.log(structuredClone(filterArr));
 //  @ "structureClone()" function with object.
 
 let newObj = {
-  name: "vishal",
+  name: 'vishal',
   age: 25,
   address: {
-    city: "pune",
-    location: "junnar",
+    city: 'pune',
+    location: 'junnar',
     zip: 412401,
   },
   function() {
-    console.log("Hello word");
+    console.log('Hello word');
   },
 };
 // since structuredClone() does not suppoert function and symbols we can exclude them before cloning.
@@ -122,8 +118,8 @@ let newObj = {
 
 let filterObject = Object.fromEntries(
   Object.entries(newObj).filter(([]) => {
-    return typeof value !== "function";
-  }),
+    return typeof value !== 'function';
+  })
 );
 
 console.log(filterObject);
@@ -139,7 +135,7 @@ function makeDeepCopy(object) {
   // next check the type of object like Object or array or (not an object or is null )
   // if its primitive (string, number, boolean, null, undefined, symbol, function) retrun directly
 
-  if (typeof object !== "object" || typeof object === null) {
+  if (typeof object !== 'object' || typeof object === null) {
     return object;
   }
 
