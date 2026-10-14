@@ -54,12 +54,12 @@ the master index in document order). Then bump EVERY chapter number ≥ the new 
 - **PART 8 · Asynchronous JS**
   62. Synchronous vs Asynchronous JS · 63. Callbacks & Callback Hell · 64. Promises: Basics · 65. Promise Chaining · 66. Promise Combinators · 67. Promise Output & Interview Questions · 68. async / await · 69. The Event Loop, Microtasks & Macrotasks
 - **PART 9 · Browser & DOM**
-  70. The window Object & BOM · 71. Web Storage & Cookies · 72. Same-Origin Policy & CORS · 73. DOM: Document Object & Tree Navigation · 74. DOM: Searching, Content & Creating Elements · 75. Events: Event Object & 3 Ways to Handle Events · 76. Mouse, Keyboard, Input & Change Events · 77. Event Propagation & Event Delegation · 78. Timing Events · 79. Debouncing · 80. Throttling · 81. Web Workers & requestAnimationFrame
+  70. The window Object & BOM · 71. Web Storage & Cookies · 72. Same-Origin Policy & CORS · 73. DOM: Document Object & Tree Navigation · 74. DOM: Searching, Content & Creating Elements · 75. Events: Event Object & 3 Ways to Handle Events · 76. Mouse, Keyboard, Input & Change Events · 77. Event Propagation & Event Delegation · 78. Timing Events · 79. Debouncing · 80. Throttling · 81. Web Workers & requestAnimationFrame · 82. Browser Rendering & Performance · 83. Web Security: XSS, CSRF & CSP · 84. Real-time & Offline: WebSocket, SSE & Service Worker
 - **PART 10 · Modern JS & More**
-  82. The Math Object · 83. The Date Object · 84. ES6+ Features by Version (ES2015 → ES2023) · 85. ES6 Modules: export & import · 86. Polyfills I: Array Methods · 87. Polyfills II: call, apply, bind, once & Object Helpers · 88. Polyfills III: Promise & Combinators · 89. Error Handling · 90. Iterators & Generators · 91. Memory Management & Garbage Collection
+  85. The Math Object · 86. The Date Object · 87. ES6+ Features by Version (ES2015 → ES2023) · 88. ES6 Modules: export & import · 89. Polyfills I: Array Methods · 90. Polyfills II: call, apply, bind, once & Object Helpers · 91. Polyfills III: Promise & Combinators · 92. Error Handling · 93. Iterators & Generators · 94. Memory Management & Garbage Collection · 95. Design Patterns in JavaScript · 96. Machine Coding: Implement-It Questions
 - **PART 11 · Mock Interviews**
-  92. Mock Interview I: Coding Tasks & Core Q&A · 93. Mock Interview II: Output Questions, Async & ES6
-- Figures: 1–160 (numbered in document order)
+  97. Mock Interview I: Coding Tasks & Core Q&A · 98. Mock Interview II: Output Questions, Async & ES6
+- Figures: 1–168 (numbered in document order)
 - coverage-check.js MAP lists which folder/file feeds which chapter; after inserting temp chapters, remap from renumber.js output.
 
 Folders done: 1-variable, 2-dataTypes, 2-2-typeCoercion, 3_scope, 4_operator, 5_controlFlowStatment, 6_function,
@@ -68,4 +68,5 @@ Folders done: 1-variable, 2-dataTypes, 2-2-typeCoercion, 3_scope, 4_operator, 5_
 26_Model(export And Import), 27_debouncing, 28_throttling, 29_bomObject, 30_domObject, 31_class, 32_jsvascript_execution, 33_polyfill, 39_eventPraPogationAndDelegation, 40_Date,
 root files 34_computedPropery.js, 35_Es6Featues.js, 36_instancesOfOperator.js, 37_returnMultiPleValue.js, 38_singleToneClass.js, 41_eventLoop, 42_localStroage, 43_cors, shallow-deep-copy, string (+ javascript_string_cheat_sheet.md), note, mock-interview.
 PENDING: none (all folders done).
+Extra interview chapters with no source folder (added 2026-10-14): 82, 83, 84 (Part 9), 95, 96 (Part 10), and Chapter 88 section 7 (CommonJS vs ESM, import(), tree shaking).
 
